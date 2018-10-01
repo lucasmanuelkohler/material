@@ -46,6 +46,8 @@ data.frame(row=s, techs)
 #### list the github usernames of everyone in your group
 #### submit a pull request to brainstorm_modified.md
 
+CHiP-SEQ
+
 [1] [https://liorpachter.wordpress.com/seq/](https://liorpachter.wordpress.com/seq/)
 
 
