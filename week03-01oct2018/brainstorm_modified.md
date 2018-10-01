@@ -40,11 +40,21 @@ data.frame(row=s, techs)
 # Part 6 - Pick a "technology" (from above, from [1] or otherwise) to briefly describe
 
 ## Exercise 2 (in groups of 1-3): 
-### Goal: 
+<!-- ### Goal: 
 #### write ~2 sentences about what the method does
 #### again, make the link (technology -> application -> statistics)
 #### list the github usernames of everyone in your group
-#### submit a pull request to brainstorm_modified.md
+#### submit a pull request to brainstorm_modified.md -->
+
+* **Technology**: DNA-sequencing
+* **Application**: Genome-Wide-Association-Studies (GWAS)
+* **Statistical method**: Regularized Regression Methods for Variable Selection in high-dimensional Settings (n << p)
+
+When analysing data from GWAS with a regression model (e.g. logistic regression for case-control studies), the problem is often that there a many more covariates than there are observations. By adding a penalty term for size of the regression coefficients (L1 = Lasso, L2 = Ridge, a mix of L1 and L2 = Elastic Net), the optimization becomes easier and the variance of regression coefficient estimates is drastically reduced (however, in theory the coefficients are more biased compared to ordinary ML estimation). The Lasso penalty is better suited for variable selection, whereas the ridge penalty is better suited if covariates are correlated, the elastic net penalty can be really powerful when both is the case. There are many extensions to penalized regression models, for example, these models can be easily translated to a [Bayesian framework](https://academic.oup.com/bioinformatics/article/27/4/516/197666).
+
+* **GitHub usernames of groupmembers**:
+  * SamCH93
+
 
 [1] [https://liorpachter.wordpress.com/seq/](https://liorpachter.wordpress.com/seq/)
 
