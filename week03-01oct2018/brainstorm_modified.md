@@ -52,9 +52,16 @@ data.frame(row=s, techs)
 #Exercise 2 Group 7 
 (Almut Lütge @almutlue, Cristina Loureiro @CrLou,, Christoph Blapp @BlappChri)  
 
-## *Technology:* RiboSeq
-## *Applications:* Generate ribosome footprints on mRNA transcript to meassure/resolve translation (translation efficiency)
-## *Statistics:* Linear models, gaussian errors, log distribution
+## RiboSeq
+[RiboSeq](http://science.sciencemag.org/content/324/5924/218) quantifies ribosomal binding and position on mRNA to monitor protein translation. Bound ribosomes protect a 30 nt footprint from nucleosomal degradation. By deep sequencing these footprints can be quantified to analyse which mRNA is translated.
+
+
+**Technology:** RiboSeq
+
+**Applications:** quantifies translation (efficiency)
+
+**Statistics:** Linear models, Gaussian errors, Log distribution
+
 
 
 
