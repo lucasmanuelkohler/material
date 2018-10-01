@@ -49,4 +49,12 @@ data.frame(row=s, techs)
 [1] [https://liorpachter.wordpress.com/seq/](https://liorpachter.wordpress.com/seq/)
 
 
+#Exercise 2 Group 7 
+(Almut Lütge @almutlue, Cristina Loureiro @CrLou,, Christoph Blapp @BlappChri)  
+
+## *Technology:* RiboSeq
+## *Applications:* Generate ribosome footprints on mRNA transcript to meassure/resolve translation (translation efficiency)
+## *Statistics:* Linear models, gaussian errors, log distribution
+
+
 
