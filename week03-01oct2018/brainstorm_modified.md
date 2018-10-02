@@ -48,5 +48,8 @@ data.frame(row=s, techs)
 
 [1] [https://liorpachter.wordpress.com/seq/](https://liorpachter.wordpress.com/seq/)
 
+**Technology**: Parallel Analysis of RNA Structure (**PARS-Seq**) is a technique that involves deep sequencing of RNA fragments. The fragments are treated with enzymes, which are specific to single- and double-stranded RNA. The structure can then be inferred by comparing digestion patterns of enzymes.
 
+**Applications**: This strategy can be used for profiling secondary and tertiary structure of RNA; it is an alternative to mass spectrometry and crystallography. PARS-Seq has been used in studies on the structure of RNA in different conditions, for instance, to investigate the effect of temperature on RNA structures, effect of SNPs on in vitro RNA structure of human transcriptomes etc.
 
+**Statistics**: When performing comparisons, often statistical hypothesis tests are used, involving FDR control and consequent *p*-value adjustment. When comparing different methods for secondary RNA structure prediction, ROC curves are used.
