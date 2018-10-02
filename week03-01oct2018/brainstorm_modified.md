@@ -72,5 +72,5 @@ The ChIRP-seq technology is a method of mapping _in vivo_ long noncoding RNA (ln
 
 - Poisson distribution of tags across genome (under null model), with dynamic parameter lambda
 
-- FDR estimation
+- FDR (False Discovery Rate) estimation
 
