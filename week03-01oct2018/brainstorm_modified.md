@@ -63,7 +63,7 @@ Researchers treat cells containing the RNA molecule of interest so as to obtain 
 
 #### **Application**
 
-The ChIRP-seq technology is a method of mapping _in vivo_ long noncoding RNA (lgnRNA) binding sites genome-wide. Thus, one can study the interaction between RNAs and the chromatine. Just as ChIP-seq permits genome-wide explorations of DNA-proteins sequences, ChIRP-seq studies the "RNA interactome".
+The ChIRP-seq technology is a method of mapping _in vivo_ long noncoding RNA (lncRNA) binding sites genome-wide. Thus, one can study the interaction between RNAs and the chromatin. Just as ChIP-seq permits genome-wide explorations of DNA-proteins sequences, ChIRP-seq studies the "RNA interactome".
 
 #### Statistics
 - same as for ChIP-seq
