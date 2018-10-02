@@ -59,7 +59,7 @@ lbourguignon : Lucie Bourguignon
 
 #### Technology
 
-Researchers treat cells containing the RNA molecule of interest so as to obtain chromatin segments that will react with the synthetic oligonucleotides designed to bind said RNA molecule. The resulting complexes are captured with streptavidin-labeled magnetic beads and treated with RNAse to isolate the bound DNA molecules. The DNA is sequenced using Next Generation Sequencing and the location of the genes corresponding to the obtained reads is determined.  
+Researchers treat cells containing the RNA molecule of interest so as to obtain chromatin segments that will react with the synthetic oligonucleotides designed to bind said RNA molecule. The resulting complexes are captured with streptavidin-labeled magnetic beads and treated with RNAse to isolate the bound DNA molecules. The DNA is sequenced using Next Generation Sequencing and the genomic locations corresponding to the obtained reads is determined.  
 
 #### **Application**
 
