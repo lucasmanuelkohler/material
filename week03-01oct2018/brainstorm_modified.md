@@ -49,10 +49,9 @@ data.frame(row=s, techs)
 * **Technology**: DNA-sequencing
 * **Application**: Genome-Wide-Association-Studies (GWAS)
 Carrying out genome-wide genetic association studies typically focus on associations between single-nucleotide polymorphisms (SNPs) and traits like major human diseases, but can equally be applied to any other organisms.
-The ultimate goal of GWAS is to identify susceptibility genes for common disease and using these genetic risk factors to make predictions about who is at risk and to find indicators about the biological contributors.
-
-When applied to human data, GWA studies compare the DNA of participants having varying phenotypes for a particular trait or disease. Resulting conclusions about possible genetic drivers of a disease or trait could be used to develop new prevention and treatment strategies.
-[Genome-wide association studies: theoretical and practical concerns](https://www.nature.com/articles/nrg1522)
+The ultimate goal of GWAS is to identify susceptibility genes for common disease and using these genetic risk factors to make predictions about who is at risk and to find indicators about the biological contributors. 
+When applied to human data, GWA studies compare the DNA of participants having varying phenotypes for a particular trait or disease. Resulting conclusions about possible genetic drivers of a disease or trait could be used to develop new prevention and treatment strategies.\\
+Source: [Genome-wide association studies: theoretical and practical concerns](https://www.nature.com/articles/nrg1522)
 * **Statistical method**: Regularized Regression Methods for Variable Selection in high-dimensional Settings (n << p)
 
 When analysing data from GWAS with a regression model (e.g. logistic regression for case-control studies), the problem is often that there a many more covariates than there are observations. By adding a penalty term for size of the regression coefficients (L1 = Lasso, L2 = Ridge, a mix of L1 and L2 = Elastic Net), the optimization becomes easier and the variance of regression coefficient estimates is drastically reduced (however, in theory the coefficients are more biased compared to ordinary ML estimation). The Lasso penalty is better suited for variable selection, whereas the ridge penalty is better suited if covariates are correlated, the elastic net penalty can be really powerful when both is the case. There are many extensions to penalized regression models, for example, these models can be easily translated to a [Bayesian framework](https://academic.oup.com/bioinformatics/article/27/4/516/197666).
