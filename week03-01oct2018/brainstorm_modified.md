@@ -50,7 +50,7 @@ data.frame(row=s, techs)
 
 
 ### ChiRP-Seq
-### Group members: 
+#### Group members: 
 parizkh: Hana Parizkova
 
 mkuijs: Merel Kuijs
