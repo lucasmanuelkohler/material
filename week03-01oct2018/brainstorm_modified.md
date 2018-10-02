@@ -48,7 +48,22 @@ data.frame(row=s, techs)
 
 [1] [https://liorpachter.wordpress.com/seq/](https://liorpachter.wordpress.com/seq/)
 
+### Group members: 
+parizkh: Hana Parizkova
+mkuijs: Merel Kuijs
+lbourguignon : Lucie Bourguignon
+
 
 ### **Application**
 
 The ChIRP-seq technology is a method of mapping _in vivo_ long noncoding RNA (lgnRNA) binding sites genome-wide. Thus, one can study the interaction between RNAs and the chromatine. Just as ChIP-seq permits genome-wide explorations of DNA-proteins sequences, ChIRP-seq studies the "RNA interactome".
+
+#### Statistics
+same as for ChIP-seq
+
+bimodal distribution (of ChIP/ChIRP-seq tags around the binding site)
+
+Poisson distribution of tags across genome (under null model), with dynamic parameter lambda
+
+FDR estimation
+
