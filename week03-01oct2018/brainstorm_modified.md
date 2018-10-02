@@ -58,7 +58,7 @@ lbourguignon: Lucie Bourguignon
 #### Statistics
 same as for ChIP-seq
 
-bimodal distribution (of ChIP/ChIRP-seq tags around true binding site)
+bimodal distribution (of ChIP/ChIRP-seq tags around the binding site)
 
 Poisson distribution of tags across genome (under null model), with dynamic parameter lambda
 
