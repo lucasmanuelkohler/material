@@ -50,7 +50,7 @@ data.frame(row=s, techs)
 * **Application**: Genome-Wide-Association-Studies (GWAS)
 Carrying out genome-wide genetic association studies typically focus on associations between single-nucleotide polymorphisms (SNPs) and traits like major human diseases, but can equally be applied to any other organisms.
 The ultimate goal of GWAS is to identify susceptibility genes for common disease and using these genetic risk factors to make predictions about who is at risk and to find indicators about the biological contributors. 
-When applied to human data, GWA studies compare the DNA of participants having varying phenotypes for a particular trait or disease. Resulting conclusions about possible genetic drivers of a disease or trait could be used to develop new prevention and treatment strategies.\\
+When applied to human data, GWA studies compare the DNA of participants having varying phenotypes for a particular trait or disease. Resulting conclusions about possible genetic drivers of a disease or trait could be used to develop new prevention and treatment strategies.
 Source: [Genome-wide association studies: theoretical and practical concerns](https://www.nature.com/articles/nrg1522)
 * **Statistical method**: Regularized Regression Methods for Variable Selection in high-dimensional Settings (n << p)
 
