@@ -48,5 +48,13 @@ data.frame(row=s, techs)
 
 [1] [https://liorpachter.wordpress.com/seq/](https://liorpachter.wordpress.com/seq/)
 
+### Group members: 
+parizkh: Hana Parizkova
+mkuijs: Merel Kuijs
+lbourguignon: Lucie Bourguignon
 
-
+#### Statistics
+same as for ChIP-seq
+bimodal distribution (of ChIP/ChIRP-seq tags around true binding site)
+Poisson distribution of tags across genome (under null model), with dynamic parameter lambda
+FDR estimation
