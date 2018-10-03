@@ -46,7 +46,9 @@ data.frame(row=s, techs)
 #### list the github usernames of everyone in your group
 #### submit a pull request to brainstorm_modified.md -->
 
-* **Technology**: DNA-sequencing
+* **Technology**: DNA-sequencing: 
+process of determining the sequence of nucleotide (A, T, G or C) in a piece of DNA. Several sequencing methods exist, as Sanger sequencing, Illumina sequencing or  nanopore sequencing.
+Source: [Khan Academy: DNA sequencing](https://www.khanacademy.org/science/high-school-biology/hs-molecular-genetics/hs-biotechnology/a/dna-sequencing)
 * **Application**: Genome-Wide-Association-Studies (GWAS)
 Carrying out genome-wide genetic association studies typically focus on associations between single-nucleotide polymorphisms (SNPs) and traits like major human diseases, but can equally be applied to any other organisms.
 The ultimate goal of GWAS is to identify susceptibility genes for common disease and using these genetic risk factors to make predictions about who is at risk and to find indicators about the biological contributors. 
@@ -59,6 +61,7 @@ When analysing data from GWAS with a regression model (e.g. logistic regression 
 * **GitHub usernames of groupmembers**:
   * SamCH93
   * sasieg
+  * CharlotteMicheloud
 
 [1] [https://liorpachter.wordpress.com/seq/](https://liorpachter.wordpress.com/seq/)
 
