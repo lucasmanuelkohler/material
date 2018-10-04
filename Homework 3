@@ -1,8 +1,11 @@
-Methyl-Seq
+#Methyl-Seq
 
-Methyl-Seq is a sequencing method based on cytosine methylation. It is possible to do both genome-wide analysis and targeted approaches.
+RBetschart: Raphael Betschart
 
-Advantages of Methyl-Seq:
+## Technology:
+- Methyl-Seq is a sequencing method based on cytosine methylation. It is possible to do both genome-wide analysis and targeted approaches.
 
-- Small amounts of DNA are sufficient to capture full sample diversity
-- Analyzation of CpG (Cytosine nucleotide followed by Guanine), CHH and CHG regions
+## Application:
+Methyl-Seq analyzes methylation patterns of CpG (Cytosine nucleotide followed by Guanine), CHH and CHG regions.
+
+##  Statistics:
