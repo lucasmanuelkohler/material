@@ -48,19 +48,4 @@ data.frame(row=s, techs)
 
 [1] [https://liorpachter.wordpress.com/seq/](https://liorpachter.wordpress.com/seq/)
 
-### Exercise 2: Technology, Application, Statistics
-### Date: 6 October 2018
-### Contributors: Andrew Acciardo and Prachi Shukla
-### Our technology: Cir-Seq
-#### Cir-Seq original manuscript: Ashley Acevedo, Leonid Brodsky, and Raul Andino, “Mutational and Fitness Landscapes of an RNA Virus Revealed through Population Sequencing,” Nature 505, no. 7485 (January 30, 2014): 686–690, doi:10.1038/nature12861.
-### Technology: 
-#### Cir-Seq, short for Circular sequencing, is a method designed to generate tandem repeats of RNA that has been circularized. The repeats that are created are subsequently used in next generation sequencing. Cir-seq improves sequence data quality through redundancy.
-
-### Application: 
-#### Due to the number of tandem repeats generated, mutations that exist in the genome can be observed at a very high resolution and differentiated from enzymatic or sequencing errors. This technique can be used to identify the variance in viral populations and mutations that may be passed on to new generations of virions. It can be used to test mutations to contribute to the fitness of a virus.
-
-### Statistics:
-#### Some statistical models/methods that are used in this technique include maximum likelihood estimation to test for the fitness parameter used in the paper. Additionally, the authors also applied a generalized Bayesian autoregression approach for the same parameter. To describe the relative fitness of a mutation, the authors used a linear model with two parameters for proportions of a mutation across serial passages of the virus in cells.
-
-
 
