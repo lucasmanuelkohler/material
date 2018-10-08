@@ -34,7 +34,7 @@ Monday 11.00-11.45 (Y01-F-50)
 | 19.11.2018  | Mark | single-cell dim. reduction + clustering; FDR  | conquer |  |  |
 | 26.11.2018  | Lukas | hands-on session #2: cytometry  | cytof null comparison |  | X |
 | 03.12.2018  | Hubert | classification  | MLInterfaces |  |  |
-| 10.12.2018  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding | | |    
+| 10.12.2018  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding |[Differential expression analysis for sequence count data](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-10-r106) (AA, PS) | |    
 | 17.12.2018  | Mark | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline |  | X |
 
 
