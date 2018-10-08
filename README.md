@@ -1,4 +1,4 @@
-# Statistical Analysis of High-Throughput Genomic and Transcriptomic Data 
+[# Statistical Analysis of High-Throughput Genomic and Transcriptomic Data 
 Fall/Herbst-semester 2018
 
 ## Lectures
@@ -32,7 +32,7 @@ Monday 11.00-11.45 (Y01-F-50)
 | 05.11.2018  | Mark | edgeR+friends 1 | basic edgeR/voom | |  |
 | 12.11.2018  | Mark | edgeR+friends 2  | GLM/DEXSeq |  |  |
 | 19.11.2018  | Mark | single-cell dim. reduction + clustering; FDR  | conquer |  |  |
-| 26.11.2018  | Lukas | hands-on session #2: cytometry  | cytof null comparison |  | X |
+| 26.11.2018  | Lukas | hands-on session #2: cytometry  | cytof null comparison | [Epigenome-wide association studies without the need for cell-type composition] (https://www.ncbi.nlm.nih.gov/pubmed/24464286) (RL, SG) | X |
 | 03.12.2018  | Hubert | classification  | MLInterfaces |  |  |
 | 10.12.2018  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding | | |    
 | 17.12.2018  | Mark | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline |  | X |
