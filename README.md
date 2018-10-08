@@ -27,7 +27,7 @@ Monday 11.00-11.45 (Y01-F-50)
 | 01.10.2018  | Mark + Hubert | interactive technology/statistics session  | group exercise: technology pull request | | |
 | 08.10.2018  | Hubert | mapping  | Rsubread | | |
 | 15.10.2018  | Mark | limma + friends   | linear model simulation + design matrices | | |
-| 22.10.2018  | Hubert | RNA-seq quantification   | RSEM | | |
+| 22.10.2018  | Hubert | RNA-seq quantification   | RSEM | |Paper: [Detection and accurate false discovery rate control of differentially methylated regions from whole genome bisulfite sequencing](https://academic.oup.com/biostatistics/advance-article/doi/10.1093/biostatistics/kxy007/4899074): (DT, HP)|
 | 29.10.2018  | Charlotte | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. |  | X |
 | 05.11.2018  | Mark | edgeR+friends 1 | basic edgeR/voom | |  |
 | 12.11.2018  | Mark | edgeR+friends 2  | GLM/DEXSeq |  |  |
