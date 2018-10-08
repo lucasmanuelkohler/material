@@ -28,7 +28,7 @@ Monday 11.00-11.45 (Y01-F-50)
 | 08.10.2018  | Hubert | mapping  | Rsubread | | |
 | 15.10.2018  | Mark | limma + friends   | linear model simulation + design matrices | | |
 | 22.10.2018  | Hubert | RNA-seq quantification   | RSEM | | |
-| 29.10.2018  | Charlotte | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. |  | X |
+| 29.10.2018  | Charlotte | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | [Capturing Heterogeneity in Gene Expression Studies by Surrogate Variable Analysis](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0030161) (MS, CR) | X |
 | 05.11.2018  | Mark | edgeR+friends 1 | basic edgeR/voom | |  |
 | 12.11.2018  | Mark | edgeR+friends 2  | GLM/DEXSeq |  |  |
 | 19.11.2018  | Mark | single-cell dim. reduction + clustering; FDR  | conquer |  |  |
