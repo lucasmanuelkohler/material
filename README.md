@@ -29,7 +29,7 @@ Monday 11.00-11.45 (Y01-F-50)
 | 15.10.2018  | Mark | limma + friends   | linear model simulation + design matrices | | |
 | 22.10.2018  | Hubert | RNA-seq quantification   | RSEM | | |
 | 29.10.2018  | Charlotte | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. |  | X |
-| 05.11.2018  | Mark | edgeR+friends 1 | basic edgeR/voom | |  |
+| 05.11.2018  | Mark | edgeR+friends 1 | basic edgeR/voom | | RB, RG [Overcoming systematic errors caused by log-transformation of normalized single-cell RNA sequencing data](https://www.biorxiv.org/content/early/2018/08/31/404962) |
 | 12.11.2018  | Mark | edgeR+friends 2  | GLM/DEXSeq |  |  |
 | 19.11.2018  | Mark | single-cell dim. reduction + clustering; FDR  | conquer |  |  |
 | 26.11.2018  | Lukas | hands-on session #2: cytometry  | cytof null comparison |  | X |
