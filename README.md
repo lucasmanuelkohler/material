@@ -33,7 +33,7 @@ Monday 11.00-11.45 (Y01-F-50)
 | 12.11.2018  | Mark | edgeR+friends 2  | GLM/DEXSeq | [A general and flexible method for signal extraction from single-cell RNA-seq data](https://www.nature.com/articles/s41467-017-02554-5) (AL, VL)  |  |
 | 19.11.2018  | Mark | single-cell dim. reduction + clustering; FDR  | conquer |  |  |
 | 26.11.2018  | Lukas | hands-on session #2: cytometry  | cytof null comparison |  | X |
-| 03.12.2018  | Hubert | classification  | MLInterfaces |  |  |
+| 03.12.2018  | Hubert | classification  | MLInterfaces | [Predicting cell types in single cell mass cytometry data](https://www.biorxiv.org/content/early/2018/05/07/316034) (CM, SS) |  |
 | 10.12.2018  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding | | |    
 | 17.12.2018  | Mark | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline |  | X |
 
