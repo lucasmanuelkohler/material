@@ -44,9 +44,7 @@ data.frame(row=s, techs)
 #### write ~2 sentences about what the method does
 #### again, make the link (technology -> application -> statistics)
 #### list the github usernames of everyone in your group
-#### submit a pull request to brainstorm_modified.md
+#### submit a pull request to brainstorm\_modified.md
 
 [1] [https://liorpachter.wordpress.com/seq/](https://liorpachter.wordpress.com/seq/)
-
-
 
