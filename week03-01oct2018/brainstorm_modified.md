@@ -275,6 +275,8 @@ CodingKaiser, asewak
 
 * The statistical significance of binding signal (i.e. specificity of binding) was determined using an exact test. P-values from this test were then subjected to a multiple testing correction technique known as Benhamin-Hochberg correction. This read-out was then used to filter out regions from the initial ~29.000 which were represented in the sequencing data, which were a result of noise in the data.
 
+### Technology: ChIP-Seq
+ChIP-sequencing, also known as ChIP-seq, is a method used to analyze protein interactions with DNA. ChIP-seq combines chromatin immunoprecipitation (ChIP) with massively parallel DNA sequencing to identify the binding sites of DNA-associated proteins. It can be used to map global binding sites precisely for any protein of interest.
 
 ---
  amuraivel
@@ -301,3 +303,13 @@ The application could be extended to researcher where certain types of T-cells a
  
  ---
  
+ ### Application
+ChIP-seq is used primarily to determine how transcription factors and other chromatin-associated proteins influence phenotype-affecting mechanisms. Specific DNA sites in direct physical interaction with transcription factors and other proteins can be isolated by chromatin immunoprecipitation. ChIP produces a library of target DNA sites bound to a protein of interest in vivo. Massively parallel sequence analyses are used in conjunction with whole-genome sequence databases to analyze the interaction pattern of any protein with DNA,[1] or the pattern of any epigenetic chromatin modifications. This can be applied to the set of ChIP-able proteins and modifications, such as transcription factors, polymerases and transcriptional machinery
+
+### Statistics
+In ChIP-Seq experiments, Poisson distribution is a natural choice to model the observed tag counts. However, Ji et al. (2008) illustrated that a negative binomial model provides a better fit to count data from ChIP-Seq experiments than a constant rate Poisson model. Thus a non-homogeneous negative binomial regression model is proposed.
+
+#### github usernames: miro-miro (Miroslav Phan)
+
+---
+
