@@ -58,3 +58,16 @@ Editors: Thomas Fischer, Mauro Schlepfer, Giuachin Kreiliger
 **Applications:** quantifies translation (efficiency)
 
 **Statistics:** Linear models, Gaussian errors, Log distribution
+
+---
+
+## Exercise 2 Part 2 - Tobias Hoch
+Technology: Chem-seq
+
+Application: This technique can be used to map genome-wide interactions between DNA and small molecules (like therapeutic drugs). This technique is therefore interesting to study for example the interaction between drugs and the DNA of patient. The small molecule is marked with a biotin tag. After fragmentation, bound DNA fragments are captured with streptavidin beads. Those fragments are then sequenced using massively parallel DNA sequencing.
+
+Statistics: To analyze the data, the fragments have to be aligned using a alignment algorithm like the Needleman-Wunsch algorithm. 
+
+---
+
+
