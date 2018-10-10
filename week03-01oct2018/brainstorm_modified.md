@@ -1,55 +1,108 @@
+---
 
-# Part 1 - Brainstorm: Statistics
+# ChIP-seq
 
-## Distributions
-## Statistical Models
-## Methods for Estimation
-## Methods for Hypothesis Testing
+## Introduction
 
-# Part 2 - Brainstorm: Technologies in Biology
+Chromatin immunoprecipitation is a technique that studies protein-DNA interaction. Proteins are cross-linked to the DNA sequences they are bound to and the DNA is then fragmented. Antibodies are used to pull down the protein that bring down the sequences cross-linked with it. The cross-link is digested and the DNA fragments associated with the protein of interest are sequenced. 
 
-## Microarray
-## ...
+This can be used to study binding targets of transcription factors, changes in binding patterns upon mutations in the protein of interest, etc.
 
-## In-class exercise 1 (15 minutes)
+## Applications
 
-### Technologies: 
+It is mainly used 
+- To map global binding sites for any protein of interest.
+- To identify the binding sites of DNA associated proteins.
+- To analyze protein interactions with DNA
 
-```{r}
-techs <- c("microarray", "rna-seq", "dna-seq", 
-           "bisulphite-seq", "cytometry", "mass-spec", 
-           "10x-chromium", "oxford-nanopore")
+## Statistics
 
-s <- sample(length(techs))
-data.frame(row=s, techs)
-```
 
-### Task: 
-#### produce a 2-3 point summary of "how it works"
-#### links to a few (<5) good resources
-#### create a markdown file for it and upload to README.me in "group assignment" repo
+|Software | Statistics|
+| --- | --- |
+|[SICER](https://home.gwu.edu/~wpeng/Software.htm) | Clustering|
+|[permseq](https://github.com/keleslab/permseq/) | lasso, log-linear model, Dirichlet-multinomial regression model|
+|[hiddenDomains](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0991-z) | HMM, Gaussian|
 
-# Part 3 - Brainstorm: Applications in genomics 
 
-# Part 4 - Brainstorm: Linking Technologies to Applications to Statistics
+---
 
-## e.g., microarray -> gene expression -> normally distributed (log intensities)
+## ChIPSeq Assay: Method to determine Protein-DNA binding sites with the help of high-troughput DNA sequencing and Immunoprecipitation methods. The protein bound DNA is separated, sequenced and mapped back onto the genome.
 
-# Part 5 - Brainstorm: Methods/algorithms in genomics associated to Computer Science
+Application: Investigation of unknown protein-DNA interactions and identification of binding sites - Interactome map showing all interactions of binding sites and proteins of interest.
 
-# Part 6 - Pick a "technology" (from above, from [1] or otherwise) to briefly describe
+Statistics: 
+For detecting a binding site, so called peak calling methods have been developed. The algorithm is constructed such that it detects local concentrations of sequence hits (with the genome, a location cluster) and constructs a peak within it. Then, a threshold can be set, f.ex. by saying that the peak should at least be sixfold higher than in the control experiment, to distinguish between noise and signal. An additional criterion for this can be a minimal number of independent tags on a binding site (reads that cover the binding site differently and must have been obtained independently). The number again can be obtained from the ROC curve, by taking the threshold that is nearest to the top left corner.
 
-## Exercise 2 (in groups of 1-3): 
-### Goal: 
-#### write ~2 sentences about what the method does
-#### again, make the link (technology -> application -> statistics)
-#### list the github usernames of everyone in your group
-#### submit a pull request to brainstorm_modified.md
+To assess the quality of results by comparing with results of other methods: Receiver operating curve (ROC) of the test (sequence is read more than a certain number of times = is a binding site) and area under curve (AUC). The AUC and its se() can be used to calculate a p-value that the given result is a chance result of true AUC = 0.5 (0-Hypothesis).
 
-[1] [https://liorpachter.wordpress.com/seq/](https://liorpachter.wordpress.com/seq/)
+To assess the precision of the DNA binding site identification, the results are compared with previously known binding sites, and then it is assessed how many of the comp. binding sites are within the ChIPSeq binding sites and where (center vs head or tail). It is also possible to compare the comp. binding sites on the genome with the ones obtained from ChIPSeq and thereby assessing how many were "missed" - only few missing indicate good coverage of the assay (that most binding sites were retrieved).
+
+To assess how good the computationally obtained binding site is, one can generally look at sequences with high reads without the binding site (no statistical method though). Another method is to block the binding site and look for lower transcription levels (simple test for two distributions to have different mean).
+
+Editors: Thomas Fischer, Mauro Schlepfer, Giuachin Kreiliger
+
+
+---
+
+
+#Exercise 2 Group 7 
+(Almut Lütge @almutlue, Cristina Loureiro @CrLou,, Christoph Blapp @BlappChri)  
+
+## RiboSeq
+[RiboSeq](http://science.sciencemag.org/content/324/5924/218) quantifies ribosomal binding and position on mRNA to monitor protein translation. Bound ribosomes protect a 30 nt footprint from nucleosomal degradation. By deep sequencing these footprints can be quantified to analyse which mRNA is translated.
+
+**Technology:** RiboSeq
+
+**Applications:** quantifies translation (efficiency)
+
+**Statistics:** Linear models, Gaussian errors, Log distribution
+
+---
+
+## Exercise 2 Part 2 - Tobias Hoch
+Technology: Chem-seq
+
+Application: This technique can be used to map genome-wide interactions between DNA and small molecules (like therapeutic drugs). This technique is therefore interesting to study for example the interaction between drugs and the DNA of patient. The small molecule is marked with a biotin tag. After fragmentation, bound DNA fragments are captured with streptavidin beads. Those fragments are then sequenced using massively parallel DNA sequencing.
+
+Statistics: To analyze the data, the fragments have to be aligned using a alignment algorithm like the Needleman-Wunsch algorithm. 
+
+---
+
+### ChiRP-Seq
+#### Group members: 
+parizkh: Hana Parizkova
+
+mkuijs: Merel Kuijs
+
+lbourguignon : Lucie Bourguignon
+
+#### Technology
+
+Researchers treat cells containing the RNA molecule of interest so as to obtain chromatin segments that will react with the synthetic oligonucleotides designed to bind said RNA molecule. The resulting complexes are captured with streptavidin-labeled magnetic beads and treated with RNAse to isolate the bound DNA molecules. The DNA is sequenced using Next Generation Sequencing and the genomic locations corresponding to the obtained reads are determined.  
+
+#### **Application**
+
+The ChIRP-seq technology is a method of mapping _in vivo_ long noncoding RNA (lncRNA) binding sites genome-wide. Thus, one can study the interaction between RNAs and the chromatin. Just as ChIP-seq permits genome-wide explorations of DNA-proteins sequences, ChIRP-seq studies the "RNA interactome".
+
+#### Statistics
+- same as for ChIP-seq
+
+- bimodal distribution (of ChIP/ChIRP-seq tags around the binding site)
+
+- Poisson distribution of tags across genome (under null model), with dynamic parameter lambda
+
+- FDR (False Discovery Rate) estimation
+
+---
+
+i6092467
 
 **Technology**: Parallel Analysis of RNA Structure (**PARS-Seq**) is a technique that involves deep sequencing of RNA fragments. The fragments are treated with enzymes, which are specific to single- and double-stranded RNA. The structure can then be inferred by comparing digestion patterns of enzymes.
 
 **Applications**: This strategy can be used for profiling secondary and tertiary structure of RNA; it is an alternative to mass spectrometry and crystallography. PARS-Seq has been used in studies on the structure of RNA in different conditions, for instance, to investigate the effect of temperature on RNA structures, effect of SNPs on in vitro RNA structure of human transcriptomes etc.
 
 **Statistics**: When performing comparisons, often statistical hypothesis tests are used, involving FDR control and consequent *p*-value adjustment. When comparing different methods for secondary RNA structure prediction, ROC curves are used.
+
+---
+
