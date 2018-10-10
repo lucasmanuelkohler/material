@@ -105,4 +105,25 @@ i6092467
 **Statistics**: When performing comparisons, often statistical hypothesis tests are used, involving FDR control and consequent *p*-value adjustment. When comparing different methods for secondary RNA structure prediction, ROC curves are used.
 
 ---
+qwertv
+
+## Genome-wide measurement of RNA secondary structure in yeast
+
+**Idea**: 
+
+* profile the structure of mRNA effectively, based on deep sequencing fragments of RNAs that were treated with structure-specific enzymes.
+
+**Application**:  
+
+* RNA structures may control gene activity
+
+**Methods**: 
+
+* define parallel analysis of RNA structure (PARS) score (high PARS score means a higher probability for a nucleotide to be in a double-stranded conformation). 
+* To test whether PARS measures RNA structure, they compute *correlation* between PARS and footprinting. 
+* Discrete *Fourier transformation* of average PARS was used to compute the periodicity
+* Sliding window analysis of local PARS score to predict the encoding of signal sequence
+
+
+---
 
