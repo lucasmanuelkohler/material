@@ -313,3 +313,12 @@ In ChIP-Seq experiments, Poisson distribution is a natural choice to model the o
 
 ---
 
+### Technology: dsRNA seq
+It has been shown that double-stranded RNA (dsRNA) molecules have a range of different tasks; those include catalytic activities and gene expression regulation, which are ultimately linked to their secondary structure. dsRNA sequencing is a genome-wide high-throughput sequencing-based method that can specifically interrogate base-paired RNA molecules. This allows for the discovery of new functional RNAs and the collection of RNA secondary structure models.
+
+[Source](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1001141)
+
+### Linking Technologies to Applications to Statistics
+dsRNA seq -> predictive cancer models -> logistic regression
+
+**Group members:** Jan Dahinden (dahjan), Daniela Schildknecht (DanielaSchildknecht)
