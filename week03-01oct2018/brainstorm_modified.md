@@ -117,14 +117,6 @@ qwertv
 
 * RNA structures may control gene activity
 
-**Methods**: 
-
-* define parallel analysis of RNA structure (PARS) score (high PARS score means a higher probability for a nucleotide to be in a double-stranded conformation). 
-* To test whether PARS measures RNA structure, they compute *correlation* between PARS and footprinting. 
-* Discrete *Fourier transformation* of average PARS was used to compute the periodicity
-* Sliding window analysis of local PARS score to predict the encoding of signal sequence
-
-
 ---
 
 #Methyl-Seq
@@ -253,5 +245,21 @@ Source: [Genome-wide association studies: theoretical and practical concerns](ht
   * CharlotteMicheloud
   
   ---
-  
-  
+
+acciardo
+
+### Statistics:
+#### Some statistical models/methods that are used in this technique include maximum likelihood estimation to test for the fitness parameter used in the paper. Additionally, the authors also applied a generalized Bayesian autoregression approach for the same parameter. To describe the relative fitness of a mutation, the authors used a linear model with two parameters for proportions of a mutation across serial passages of the virus in cells.
+=======
+**Methods**: 
+
+* define parallel analysis of RNA structure (PARS) score (high PARS score means a higher probability for a nucleotide to be in a double-stranded conformation). 
+* To test whether PARS measures RNA structure, they compute *correlation* between PARS and footprinting. 
+* Discrete *Fourier transformation* of average PARS was used to compute the periodicity
+* Sliding window analysis of local PARS score to predict the encoding of signal sequence
+
+---
+
+
+
+ 
