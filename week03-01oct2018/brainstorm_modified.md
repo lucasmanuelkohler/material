@@ -260,6 +260,21 @@ acciardo
 
 ---
 
+CodingKaiser
+
+##### ChemSeq
+**Technology**
+
+* A method similar to CHiP-seq, Chem-seq relies on small-molecule ligand-binding to identify sites throughout the human genome which are specifically targeted and bound to by the small molecule in question. Large-scale DNA sequencing is employed to determine which regions of the genome the small-molecule binds to.
+
+**Applicaton**
+
+* Chem-seq primarily allows for researchers to assess the genome binding-abilities of small-molecule therapeutics, specifically those which influence gene expression and regulation. Formaldehyde fixation of biotinylated small-molecule drugs can be used to isolate stretches of DNA where proteins or the DNA itself are bound to the molecule in question. This aids in drug discovery and may provide a read-out of specific to nonspecific binding of small molecule therapeutics.
+
+**Statistics**
+
+* The statistical significance of binding signal (i.e. specificity of binding) was determined using an exact test. P-values from this test were then subjected to a multiple testing correction technique known as Benhamin-Hochberg correction. This read-out was then used to filter out regions from the initial ~29.000 which were represented in the sequencing data, which were a result of noise in the data.
 
 
+---
  
