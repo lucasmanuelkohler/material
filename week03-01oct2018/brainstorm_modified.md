@@ -70,4 +70,28 @@ Statistics: To analyze the data, the fragments have to be aligned using a alignm
 
 ---
 
+### ChiRP-Seq
+#### Group members: 
+parizkh: Hana Parizkova
+
+mkuijs: Merel Kuijs
+
+lbourguignon : Lucie Bourguignon
+
+#### Technology
+
+Researchers treat cells containing the RNA molecule of interest so as to obtain chromatin segments that will react with the synthetic oligonucleotides designed to bind said RNA molecule. The resulting complexes are captured with streptavidin-labeled magnetic beads and treated with RNAse to isolate the bound DNA molecules. The DNA is sequenced using Next Generation Sequencing and the genomic locations corresponding to the obtained reads are determined.  
+
+#### **Application**
+
+The ChIRP-seq technology is a method of mapping _in vivo_ long noncoding RNA (lncRNA) binding sites genome-wide. Thus, one can study the interaction between RNAs and the chromatin. Just as ChIP-seq permits genome-wide explorations of DNA-proteins sequences, ChIRP-seq studies the "RNA interactome".
+
+#### Statistics
+- same as for ChIP-seq
+
+- bimodal distribution (of ChIP/ChIRP-seq tags around the binding site)
+
+- Poisson distribution of tags across genome (under null model), with dynamic parameter lambda
+
+- FDR (False Discovery Rate) estimation
 
