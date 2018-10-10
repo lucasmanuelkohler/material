@@ -1,0 +1,16 @@
+#Methyl-Seq
+
+[Methods](https://www.illumina.com/techniques/sequencing/methylation-sequencing.html)
+
+RBetschart: Raphael Betschart
+retogerber: Reto Gerber
+
+## Technology:
+- Methyl-Seq is a sequencing method based on cytosine methylation. It is possible to do both genome-wide analysis and targeted approaches.
+
+## Application:
+Methyl-Seq analyzes methylation patterns of CpG (Cytosine nucleotide followed by Guanine), CHH and CHG regions.
+
+##  Statistics:
+Differential methylation analysis of multiple sample groups is a method that can be used to compare methylation of different samples.
+[Methyl-Seq Methods](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3481483/pdf/1471-2164-13-S6-S14.pdf)
