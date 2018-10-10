@@ -16,6 +16,7 @@ It is mainly used
 
 ## Statistics
 
+
 |Software | Statistics|
 |---------|-----------|
 |[SICER](https://home.gwu.edu/~wpeng/Software.htm) | Clustering|
@@ -23,3 +24,19 @@ It is mainly used
 |[permseq](https://github.com/keleslab/permseq/) | lasso, log-linear model, Dirichlet-multinomial regression model|
 |---------|-----------|
 |[hiddenDomains](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0991-z) | HMM, Gaussian|
+
+
+
+
+#Exercise 2 Group 7 
+(Almut Lütge @almutlue, Cristina Loureiro @CrLou,, Christoph Blapp @BlappChri)  
+
+## RiboSeq
+[RiboSeq](http://science.sciencemag.org/content/324/5924/218) quantifies ribosomal binding and position on mRNA to monitor protein translation. Bound ribosomes protect a 30 nt footprint from nucleosomal degradation. By deep sequencing these footprints can be quantified to analyse which mRNA is translated.
+
+
+**Technology:** RiboSeq
+
+**Applications:** quantifies translation (efficiency)
+
+**Statistics:** Linear models, Gaussian errors, Log distribution
