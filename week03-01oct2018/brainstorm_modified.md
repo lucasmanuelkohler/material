@@ -322,3 +322,29 @@ It has been shown that double-stranded RNA (dsRNA) molecules have a range of dif
 dsRNA seq -> predictive cancer models -> logistic regression
 
 **Group members:** Jan Dahinden (dahjan), Daniela Schildknecht (DanielaSchildknecht)
+
+---
+
+### Users
+Ainesh Sewak - asewak
+
+### Technology: HELP-seq
+The HpaII tiny fragment- Enrichment by Ligation-mediated PCR (HELP) assay is a means of screening DNA methylation status at a large proportion of cytosine sites through-out the genome. The HELP assay positively identifies hypomethylated loci by means of the HpaII representation. [1]
+
+### Application
+* To discover loci with altered copy number with high resolution, sensitivity and accuracy on a single microarray
+* Cancer research - testing DNA for cytosine methylation and copy-number variation with limited starting material
+* Detect allelic differences in methylation
+* Find repetitive sequences
+* Detect small events in HpaII fragments
+* Human genome sequencing
+
+### Statistics
+Using circular binary segmentation for finding change-points. Change-points correspond to positions where the underlying DNA copy number has changed. Therefore, change-points can be used to identify regions of gained and lost copy number.
+
+Circular binary segmentation (CBS) is a modification of the traditional binary segmentation procedure (likelihood ratio statistic), which cannot detect a small change buried in the middle of a large segment of DNA. The key difference is that CBS allows for both a single change and the epidemic alternative.
+
+[1] [High-resolution genome-wide cytosine methylation profiling with simultaneous copy number analysis and optimization for limited cell numbers](https://academic.oup.com/nar/article-abstract/37/12/3829/1044056)
+
+---
+
