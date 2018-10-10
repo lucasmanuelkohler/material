@@ -26,7 +26,7 @@ It is mainly used
 |[hiddenDomains](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0991-z) | HMM, Gaussian|
 
 
-
+---
 
 ## ChIPSeq Assay: Method to determine Protein-DNA binding sites with the help of high-troughput DNA sequencing and Immunoprecipitation methods. The protein bound DNA is separated, sequenced and mapped back onto the genome.
 
@@ -44,7 +44,7 @@ To assess how good the computationally obtained binding site is, one can general
 Editors: Thomas Fischer, Mauro Schlepfer, Giuachin Kreiliger
 
 
-
+---
 
 
 #Exercise 2 Group 7 
