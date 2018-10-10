@@ -1,50 +1,25 @@
 
-# Part 1 - Brainstorm: Statistics
+# ChIP-seq
 
-## Distributions
-## Statistical Models
-## Methods for Estimation
-## Methods for Hypothesis Testing
+## Introduction
 
-# Part 2 - Brainstorm: Technologies in Biology
+Chromatin immunoprecipitation is a technique that studies protein-DNA interaction. Proteins are cross-linked to the DNA sequences they are bound to and the DNA is then fragmented. Antibodies are used to pull down the protein that bring down the sequences cross-linked with it. The cross-link is digested and the DNA fragments associated with the protein of interest are sequenced. 
 
-## Microarray
-## ...
+This can be used to study binding targets of transcription factors, changes in binding patterns upon mutations in the protein of interest, etc.
 
-## In-class exercise 1 (15 minutes)
+## Applications
 
-### Technologies: 
+It is mainly used 
+- To map global binding sites for any protein of interest.
+- To identify the binding sites of DNA associated proteins.
+- To analyze protein interactions with DNA
 
-```{r}
-techs <- c("microarray", "rna-seq", "dna-seq", 
-           "bisulphite-seq", "cytometry", "mass-spec", 
-           "10x-chromium", "oxford-nanopore")
+## Statistics
 
-s <- sample(length(techs))
-data.frame(row=s, techs)
-```
-
-### Task: 
-#### produce a 2-3 point summary of "how it works"
-#### links to a few (<5) good resources
-#### create a markdown file for it and upload to README.me in "group assignment" repo
-
-# Part 3 - Brainstorm: Applications in genomics 
-
-# Part 4 - Brainstorm: Linking Technologies to Applications to Statistics
-
-## e.g., microarray -> gene expression -> normally distributed (log intensities)
-
-# Part 5 - Brainstorm: Methods/algorithms in genomics associated to Computer Science
-
-# Part 6 - Pick a "technology" (from above, from [1] or otherwise) to briefly describe
-
-## Exercise 2 (in groups of 1-3): 
-### Goal: 
-#### write ~2 sentences about what the method does
-#### again, make the link (technology -> application -> statistics)
-#### list the github usernames of everyone in your group
-#### submit a pull request to brainstorm\_modified.md
-
-[1] [https://liorpachter.wordpress.com/seq/](https://liorpachter.wordpress.com/seq/)
-
+|Software | Statistics|
+|---------|-----------|
+|[SICER](https://home.gwu.edu/~wpeng/Software.htm) | Clustering|
+|---------|-----------|
+|[permseq](https://github.com/keleslab/permseq/) | lasso, log-linear model, Dirichlet-multinomial regression model|
+|---------|-----------|
+|[hiddenDomains](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0991-z) | HMM, Gaussian|
