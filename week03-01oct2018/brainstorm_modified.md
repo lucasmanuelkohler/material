@@ -166,5 +166,32 @@ This is helpful to characterize the development and the presence of pathological
  
  ---
  
- 
+ ## Hi-C
+
+### Technology
+
+The chosen thechnology is Hi-C a method used for chromosome conformation capture
+
+
+### Summary
+Hi-C is a genome-wide sequencing technique used to investigate the 3D structure of chromitain within the nucleus. In the procedure DNA is cut by unspecific restriction enzymes. Consecutively the DNA fragments are covalently bound to neighbouring fragments. Thus fragments are merged that were close to each other in the 3D conformation of the DNA. 
+
+### Computational Methods
+
+In order to obtain information about the 3D structure of the chromatin the newly merged DNA fragments need to be sequenced and mapped to a reference genome. Various algorithms have been developed to effectively identify chromatin interactions and TADs (topologically associating domains).
+
+Examples for such algorithms include Fit-Hi-C [1](https://noble.gs.washington.edu/proj/fit-hi-c/), HIPPIE [2](https://www.lisanwanglab.org/hippie/) and HiCseg [3](https://cran.r-project.org/web/packages/HiCseg/index.html)
+.
+
+
+
+
+###List of memebers
+
+Jerome Zuercher (github username: jezuercher)
+
+
+---
+
+
  
