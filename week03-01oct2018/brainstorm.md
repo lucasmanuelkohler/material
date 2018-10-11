@@ -6,10 +6,20 @@
 ![](distributions.JPG) 
 
 ## Statistical Models
+
+![](models.JPG) 
+
 ## Methods for Estimation
+
+![](estimation_methods.JPG) 
+
 ## Methods for Hypothesis Testing
 
+![](hypothesis_testing.JPG) 
+
 # Part 2 - Brainstorm: Technologies in Biology
+
+![](technologies.JPG) 
 
 ## Microarray
 ## ...
@@ -33,6 +43,8 @@ data.frame(row=s, techs)
 #### create a markdown file for it and upload to README.me in "group assignment" repo
 
 # Part 3 - Brainstorm: Applications in genomics 
+
+![](applications.JPG) 
 
 # Part 4 - Brainstorm: Linking Technologies to Applications to Statistics
 
