@@ -2,6 +2,9 @@
 # Part 1 - Brainstorm: Statistics
 
 ## Distributions
+
+![](distributions.JPG) 
+
 ## Statistical Models
 ## Methods for Estimation
 ## Methods for Hypothesis Testing
