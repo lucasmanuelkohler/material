@@ -1,4 +1,4 @@
-[# Statistical Analysis of High-Throughput Genomic and Transcriptomic Data 
+# Statistical Analysis of High-Throughput Genomic and Transcriptomic Data 
 Fall/Herbst-semester 2018
 
 ## Lectures
