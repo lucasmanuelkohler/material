@@ -20,7 +20,7 @@ We use the library subread to generate the counts
 library(Rsubread)
 countResult1 = featureCounts(..., strandSpecific=0,
                                  GTF.featureType="exon", GTF.attrType="gene_id", useMetaFeatures=TRUE,
-                                 allowMultiOverlap=TRUE, countMultiMappingReads=TRUE)
+                                 allowMultiOverlap=TRUE, countMultiMappingReads=FALSE)
 save(countResult1, file="countResult1.RData")
 countResult2 = featureCounts(..., strandSpecific=0,
                                  GTF.featureType="exon", GTF.attrType="gene_id", useMetaFeatures=TRUE,
