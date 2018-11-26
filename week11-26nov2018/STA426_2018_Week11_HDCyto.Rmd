@@ -1,0 +1,226 @@
+---
+title: "STA426 - Week 11 - High-dimensional cytometry data analysis"
+author: "Lukas M. Weber"
+date: "11/26/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Introduction
+
+See slides:
+
+- Single-cell data
+- High-dimensional cytometry
+- Bioconductor
+- CyTOF workflow and CATALYST vignette
+
+
+
+# Install Bioconductor packages
+
+See separate R script.
+
+
+
+# Demo: workflow based on CyTOF workflow and CATALYST vignette
+
+
+## Background
+
+See text in Sections 1 (Introduction) and 2 (Data description) in CyTOF workflow.
+
+
+## 1. Example data
+
+Note: the example data used in the CATALYST vignette is a subset of the full BCR-XL
+dataset from the CyTOF workflow.
+
+```{r}
+library(CATALYST)
+
+# load example data
+data(PBMC_fs, PBMC_panel, PBMC_md)
+
+PBMC_fs
+length(PBMC_fs)
+PBMC_fs[[1]]
+head(exprs(PBMC_fs[[1]]))
+
+PBMC_panel
+
+PBMC_md
+```
+
+
+## 2. Data organization: The daFrame class
+
+The 'daFrame' class is used to structure the data for the differential analysis workflow.
+This collapses the multiple tables of data (one table per sample) from the raw data into a
+single table.
+
+```{r}
+# construct daFrame
+daf <- daFrame(PBMC_fs, PBMC_panel, PBMC_md)
+
+library(SummarizedExperiment)
+
+daf
+dim(daf)
+head(exprs(daf))
+rowData(daf)
+colData(daf)
+```
+
+
+## 3. Diagnostic plots
+
+3.1. plotCounts: Number of cells measured per sample
+
+```{r}
+n_cells(daf)
+
+plotCounts(daf, color_by = "condition")
+```
+
+
+3.2. plotMDS: Multi-dimensional scaling plot
+
+```{r}
+plotMDS(daf, color_by = "condition")
+```
+
+
+3.3. plotExprHeatmap: Heatmap of (scaled) median marker expressions
+
+```{r}
+plotExprHeatmap(daf, color_by = "condition")
+```
+
+
+## 4.  Clustering
+
+4.1. cluster: FlowSOM clustering & ConsensusClusterPlus metaclustering
+
+```{r}
+# specify markers to use for clustering
+lineage_markers <- c("CD3", "CD45", "CD4", "CD20", "CD33", "CD123", "CD14", "IgM", "HLA_DR", "CD7")
+
+# perform clustering
+daf <- cluster(daf, cols_to_use = lineage_markers)
+
+rowData(daf)
+colData(daf)
+```
+
+
+Note: Skip Sections 4.2 (Delta area plot) and 4.3 (mergeClusters: Manual cluster merging)
+for this demo.
+
+
+4.4. plotClusterHeatmap: Heatmap of (meta)clustering results
+
+Note: using default values for arguments 'k' and 'm'.
+
+```{r}
+# median pS6 expression by sample as 2nd heatmap
+plotClusterHeatmap(daf, hm2 = "pS6")
+```
+
+```{r}
+# population frequencies by sample as 2nd heatmap
+plotClusterHeatmap(daf, hm2 = "abundances", draw_freqs = TRUE, cluster_anno = FALSE)
+```
+
+
+4.5. plotAbundances: Relative population abundances
+
+Note: using default value for argument 'k'.
+
+```{r}
+plotAbundances(daf, by = "sample_id", group = "condition")
+```
+
+```{r}
+plotAbundances(daf, by = "cluster_id", group = "condition")
+```
+
+
+## 5. Dimensionality reduction with tSNE
+
+```{r}
+daf <- tSNE(daf, cols_to_use = lineage_markers, 
+            n = 200, verbose = FALSE, seed = 42)
+```
+
+
+5.1. plotSNE: t-SNE visualization
+
+```{r}
+# color by pS6 expression and split by condition
+plotSNE(daf, color_by = "pS6", facet = "condition")
+```
+
+
+Note: using default value for argument 'color_by'.
+
+```{r}
+# color by metaclusters and split by sample ID
+plotSNE(daf, facet = "sample_id")
+```
+
+
+## 6. Differental testing with 'diffcyt'
+
+```{r}
+library(diffcyt)
+
+# create model formula
+formula <- createFormula(PBMC_md, cols_fixed = 3, cols_random = 4)
+formula
+
+# create contrast
+contrast <- createContrast(c(0, 1))
+contrast
+
+# test for differential abundance (DA) of clusters
+res_DA <- diffcyt(daf, formula = formula, contrast = contrast, 
+                  analysis_type = "DA", method_DA = "diffcyt-DA-GLMM", clustering_to_use = "meta20")
+
+# test for differential states (DS) within clusters
+res_DS <- diffcyt(daf, formula = formula, contrast = contrast, 
+                  analysis_type = "DS", method_DS = "diffcyt-DS-LMM", clustering_to_use = "meta20")
+```
+
+
+6.1. plotDiffHeatmap: Heatmap of differential testing results
+
+```{r}
+# DA test results
+plotDiffHeatmap(daf, res_DA, all = TRUE, normalize = TRUE)
+```
+
+
+```{r}
+# DS test results
+plotDiffHeatmap(daf, res_DS, top_n = 20, normalize = TRUE)
+```
+
+
+
+# Exercise
+
+Perform a "null comparison" using code and data from the CATALYST vignette and/or CyTOF workflow.
+
+–  e.g. 4 vs. 4 comparison of "Reference" samples only (instead of comparing stimulated vs. reference samples)
+–  note: the CATALYST vignette contains a subset of the full dataset; if you need more samples, try downloading the full data using code from the CyTOF workflow
+–  re-run the analysis by modifying inputs to the plotting functions and differential testing functions
+–  plot and interpret the results
+–  what do the results show? what did you expect?
+
+
+
