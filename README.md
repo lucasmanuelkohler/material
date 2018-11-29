@@ -35,7 +35,7 @@ Monday 11.00-11.45 (Y01-F-50)
 | 26.11.2018  | Lukas | hands-on session #2: cytometry  | cytof null comparison | [Epigenome-wide association studies without the need for cell-type composition](https://www.ncbi.nlm.nih.gov/pubmed/24464286) (RL, SG) | X |
 | 03.12.2018  | Hubert | classification  | MLInterfaces |  |  |
 | 10.12.2018  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding | [Differential expression analysis for sequence count data](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-10-r106) (AA, PS) | [Visualizing Data using t-SNE](https://lvdmaaten.github.io/publications/papers/JMLR_2008.pdf) (MJT, TB, MP)  |    
-| 17.12.2018  | Mark | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline | [Bump hunting to identify differentially methylated regions in epigenetic epidemiology studies](https://www.ncbi.nlm.nih.gov/pubmed/22422453) (SB,ST) | x |
+| 17.12.2018  | Mark | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline |  |  |
 
 
 
