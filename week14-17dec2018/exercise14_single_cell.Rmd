@@ -1,10 +1,12 @@
 ---
-title: "Exercise: Single-cell RNA-seq session"
-author: "Lukas Weber, Stefan Milosavljevic, Mark Robinson"
+title: "Exercise 14: Single-cell RNA-seq session"
+author: "Mark Robinson (adapted from Lukas Weber)"
 date: 'Compiled: `r format(Sys.Date(), "%B %d, %Y")`'
 output:
   html_document:
     theme: united
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -19,54 +21,42 @@ print_solutions <- FALSE
 
 For this exercise, we will use the single-cell RNA-seq dataset `Deng2014`, downloaded from the `conquer` database ([Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549)), available here: http://imlspenticton.uzh.ch:3838/conquer/. The `Deng2014` dataset contains 291 single cells from mouse (*mus musculus*), from a study investigating mouse development from zygote to blastocyst, and adult liver. For more details on the dataset, see the paper by [Deng et al. (2014)](https://www.ncbi.nlm.nih.gov/pubmed/24408435).
 
-- Download the `Deng2014` dataset from the `conquer` database by clicking `Download .rds` in the `MultiAssayExperiment` column. This will download the dataset as an `.rds` file. This is a standard file format for R objects. Save the file in the directory `../data`. Note that this is a large file (341 MB).
+- Download the `Deng2014` dataset from the `conquer` database by clicking `Download .rds` in the `MultiAssayExperiment` column.
 
-- Re-run the `Seurat` analysis pipeline on this dataset. Start by converting the data object into the `Seurat` object format, and running the pre-processing steps. Example code to do this is provided below. Then, you can follow the main analysis steps from the previous demonstration: dimensionality reduction, clustering, and differential analysis to find marker genes.
+- Re-run the `Seurat` analysis pipeline on this dataset. Start by creating a `Seurat` object from the count data (and any associated metadata) in the `MultiAssayExperiment` object. Then, you can follow the main analysis steps from the demonstration: dimensionality reduction, clustering, and differential analysis to find marker genes.
 
-- Modify the `Seurat` pipeline as required for this dataset (run each step, inspect the plots, and adjust code or parameters if necessary). The aim is to answer the following questions:
+- The aim is to answer the following questions:
 
     - How many clusters does `Seurat` generate? Does this seem like a reasonable number of 'cell types' for this dataset? You can use the [`scater` report](http://imlspenticton.uzh.ch/robinson_lab/conquer/report-scater/GSE45719_scater.html) as a guide. Are the clusters clearly separated?
 
     - Generate lists of top 'marker genes' for each cluster. If you have previously learned about this data type in your studies (species, tissue, etc), do the marker genes correspond to known markers from the literature?
 
-    - Generate a tSNE plot, and try to match the clusters to the marker genes in order to identify the clusters (cell populations). (Hint: generate tSNE plots with shading for key marker genes.)
-
-<!-- - Optional: if you have time, explore the `iSEE` package (Soneson, Lun, Marini, and Rue-Albrecht, 2018), available from Bioconductor: http://bioconductor.org/packages/release/bioc/html/iSEE.html. This package lets you generate several interactive exploratory plots for single-cell data, using the `Shiny` interface for R. Code to install `iSEE` from Bioconductor is provided below. See the [`iSEE` User's Guide](http://bioconductor.org/packages/release/bioc/vignettes/iSEE/inst/doc/iSEE_vignette.html) for examples. Note that you will also need to convert the object back to the Bioconductor `SingleCellExperiment` format to use `iSEE`. -->
-
-
-## Example code to convert 'conquer' object to 'Seurat' format and perform pre-processing
-
-```{r, message=FALSE}
+    - Generate a tSNE (or UMAP or other dimension reduction) plot, and try to match the clusters to the marker genes in order to identify the clusters (cell populations).
+    
+    
+```{r, message=FALSE, warning=FALSE}
 # Load packages
-library(SummarizedExperiment)
 library(MultiAssayExperiment)
-library(SingleCellExperiment)
-library(Seurat)
 ```
-
-You can either download the file (`GSE45719.rds`) manually from the `conquer` website, or using the code below to download directly from within an R session (it also checks if the file already exists).
 
 ```{r}
 # Download file
 url <- "http://imlspenticton.uzh.ch/robinson_lab/conquer/data-mae/GSE45719.rds"
-filename <- file.path("..", "data", basename(url))
+dir.create("data")
+filename <- file.path("data", basename(url))
 
 if(!file.exists(filename)) {
-  download.file(url, destfile = filename)
+  download.file(url, filename)
 }
 ```
 
 ```{r}
 # Load data
-gse45719 <- readRDS("../data/GSE45719.rds")
+gse45719 <- readRDS("data/GSE45719.rds")
 experiments(gse45719)
 ```
 
-The above object contains both 'gene' and 'tx' (transcript) information. The data is stored in Bioconductor's `MultiAssayExperiment` format, which links the different types of information in a consistent manner across cells and features (e.g. genes).
-
-Here, we will use the gene information only. We need to extract the gene-level information as a Bioconductor `RangedSummarizedExperiment` object, and then convert this into the `Seurat` data format. We do this by creating a new `Seurat` object.
-
-As in the demonstration, the `Seurat` object creation step also includes an initial filtering step (arguments `min.cells` and `min.genes`).
+The object contains both 'gene' and 'tx' (transcript) information. Here, we will use the gene information only and we can extract it as a `RangedSummarizedExperiment` object.
 
 ```{r}
 # Extract gene data as Bioconductor 'RangedSummarizedExperiment' object
@@ -78,161 +68,5 @@ counts <- assays(gse45719_gene)[["count"]]
 
 # Get column meta-data (cell names) from original 'MultiAssayExperiment' object
 col_data <- data.frame(cell_id = colData(gse45719)$geo_accession)
-
-# Create Seurat object
-gse45719_Seurat <- CreateSeuratObject(
-  raw.data = counts, 
-  meta.data = col_data, 
-  min.cells = 3, 
-  min.genes = 200
-)
-gse45719_Seurat
 ```
-
-Next, we re-run the pre-processing steps from the previous demonstration.
-
-```{r}
-# Filtering
-# Filter cells with unique gene counts <5000 or >20000
-gse45719_Seurat <- FilterCells(
-  object = gse45719_Seurat, 
-  subset.names = "nGene", 
-  low.thresholds = 5000, 
-  high.thresholds = 20000
-)
-```
-
-```{r}
-# Normalization
-gse45719_Seurat <- NormalizeData(
-  object = gse45719_Seurat, 
-  normalization.method = "LogNormalize", 
-  scale.factor = 1e4
-)
-```
-
-```{r, fig.height=4, fig.width=5}
-# Selection of highly variable genes
-# (runtime: ~1 min on laptop)
-gse45719_Seurat <- FindVariableGenes(
-  object = gse45719_Seurat, 
-  mean.function = ExpMean, 
-  dispersion.function = LogVMR
-)
-
-# Number of highly variable genes
-length(x = gse45719_Seurat@var.genes)
-```
-
-```{r}
-# Scale data
-gse45719_Seurat <- ScaleData(
-  object = gse45719_Seurat
-)
-```
-
-<!-- Then, continue with the analysis steps: dimensionality reduction, clustering, and differential analysis to identify marker genes. -->
-
-
-```{r, eval=print_solutions, echo=print_solutions}
-# ----------------------------------------------------------------------
-# SOLUTIONS: DIMENSIONALITY REDUCTION, CLUSTERING, DIFFERENTIAL ANALYSIS
-# ----------------------------------------------------------------------
-```
-
-```{r, fig.height=3.5, fig.width=5, eval=print_solutions, echo=print_solutions}
-# Principal component analysis (PCA)
-gse45719_Seurat <- RunPCA(
-  object = gse45719_Seurat, 
-  pc.genes = gse45719_Seurat@var.genes, 
-  do.print = FALSE, 
-  pcs.print = 1:5, 
-  genes.print = 5
-)
-
-# PCA plot
-PCAPlot(
-  object = gse45719_Seurat, 
-  dim.1 = 1, 
-  dim.2 = 2
-)
-```
-
-```{r, fig.height=3, fig.width=4, warning=FALSE, eval=print_solutions, echo=print_solutions}
-# Select principal components (PCs_
-PCElbowPlot(object = gse45719_Seurat)
-```
-
-```{r, eval=print_solutions, echo=print_solutions}
-# Clustering
-gse45719_Seurat <- FindClusters(
-  object = gse45719_Seurat, 
-  reduction.type = "pca", 
-  dims.use = 1:11, 
-  resolution = 0.6, 
-  print.output = 0, 
-  save.SNN = TRUE
-)
-```
-
-```{r, message=FALSE, warnings=FALSE, eval=print_solutions, echo=print_solutions}
-# Run tSNE
-gse45719_Seurat <- RunTSNE(
-  object = gse45719_Seurat, 
-  dims.use = 1:11
-)
-```
-
-```{r, fig.height=3.5, fig.width=4.5, eval=print_solutions, echo=print_solutions}
-# tSNE plot
-TSNEPlot(object = gse45719_Seurat)
-```
-
-```{r, results="hide", eval=print_solutions, echo=print_solutions}
-# Differential analysis: find marker genes
-# Find markers for every cluster compared to all remaining cells; report only the positive ones
-# (runtime: ~1 min on laptop)
-gse45719_Seurat.markers <- FindAllMarkers(
-  object = gse45719_Seurat,
-  only.pos = TRUE
-)
-
-suppressPackageStartupMessages(library(dplyr))
-suppressPackageStartupMessages(library(magrittr))
-
-gse45719_Seurat.markers %>% group_by(cluster) %>% top_n(2, avg_logFC)
-```
-
-```{r, fig.height=5.5, fig.width=5.5, eval=print_solutions, echo=print_solutions}
-# Marker plots (tSNE)
-FeaturePlot(
-  object = gse45719_Seurat, 
-  features.plot = c("ENSMUSG00000081249.3", "ENSMUSG00000026246.12", "ENSMUSG00000028773.8", "ENSMUSG00000023043.6"), 
-  cols.use = c("grey", "blue"), 
-  reduction.use = "tsne"
-)
-```
-
-```{r, fig.height=5, fig.width=9, message=FALSE, warning=FALSE, eval=print_solutions, echo=print_solutions}
-# Top marker genes for each cluster
-gse45719_Seurat.markers %>% group_by(cluster) %>% top_n(10, avg_logFC) -> top10
-top10
-
-# Heatmaps
-DoHeatmap(
-  object = gse45719_Seurat, 
-  genes.use = top10$gene, 
-  slim.col.label = TRUE, 
-  remove.key = TRUE
-)
-```
-
-
-<!-- ## Example code to install 'iSEE' -->
-
-<!-- ```{r, eval=FALSE} -->
-<!-- source("https://bioconductor.org/biocLite.R") -->
-<!-- biocLite("iSEE") -->
-<!-- ``` -->
-
 
