@@ -22,8 +22,8 @@ Monday 11.00-11.45 (Y01-F-50)
 | 30.09.2019  | Hubert | NGS intro; exploratory data analysis | EDA in R | | |
 | 07.10.2019  | Hubert | mapping  | Rsubread | | |
 | 14.10.2019  | Mark | limma + friends | linear model simulation + design matrices |  |  |
-| 21.10.2019  | YYY | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
-| 28.10.2019  | Hubert | RNA-seq quantification    | RSEM  | | |
+| 21.10.2019  | Hubert | RNA-seq quantification    | RSEM  | | |
+| 28.10.2019  | YYY | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
 | 04.11.2019  | Mark | edgeR+friends 1 | basic edgeR/voom |  |  |
 | 11.11.2019  | Mark | edgeR+friends 2  | GLM/DEXSeq |  |  |
 | 18.11.2019  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering  | scRNA exercise 1 |  |  |
