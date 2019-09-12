@@ -15,7 +15,7 @@ Monday 11.00-11.45 (Y01-F-50)
 
 Katharina Hembach, PhD Student, [Robinson Lab](https://robinsonlabuzh.github.io/), [IMLS](http://www.imls.uzh.ch/index.html), UZH  
 
-Pierre-Luc Germain, Postdoctoral fellow, [Robinson Lab](https://robinsonlabuzh.github.io/), [IMLS](http://www.imls.uzh.ch/index.html), UZH and [Molecular and Behavioral Neuroscience](https://bohaceklab.ethz.ch/), [D-HEST](https://hest.ethz.ch/en), ETH Zurich 
+Pierre-Luc Germain, Postdoctoral Fellow, [Robinson Lab](https://robinsonlabuzh.github.io/), [IMLS](http://www.imls.uzh.ch/index.html), UZH and [Molecular and Behavioral Neuroscience Lab](https://bohaceklab.ethz.ch/), [D-HEST](https://hest.ethz.ch/en), ETH Zurich 
 
 
 
@@ -35,7 +35,7 @@ Pierre-Luc Germain, Postdoctoral fellow, [Robinson Lab](https://robinsonlabuzh.g
 | 18.11.2019  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering  | scRNA exercise 1 |  |  |
 | 25.11.2019  | YYY | hands-on session #2: cytometry  | cytof null comparison | X | X |
 | 02.12.2019  | Mark | single-cell 2: cell type definition, differential state  | scRNA exercise 2 |  |  |
-| 09.12.2019  | ZZZ | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline | X | X |
+| 09.12.2019  | Pierre-Luc | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline | X | X |
 | 16.12.2019  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding |  |  |    
 
 
