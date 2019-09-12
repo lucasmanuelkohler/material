@@ -2,7 +2,7 @@
 Fall/Herbst-semester 2019
 
 ## Lectures
-Mondays 9.00-9.45 (tba), 10.00-10.45 (tba)
+Mondays 9.00-9.45 (Y27-H-46), 10.00-10.45 (Y27-H-46)
 
 ## Exercises
 Monday 11.00-11.45 (Y01-F-50)
@@ -13,7 +13,10 @@ Monday 11.00-11.45 (Y01-F-50)
 
 [Prof. Dr. Mark Robinson](https://robinsonlabuzh.github.io/), Associate Professor of Statistical Genomics, [IMLS](http://www.imls.uzh.ch/index.html), UZH  
 
-[Katharina Hembach](https://robinsonlabuzh.github.io/), PhD Student, Robinson Lab, [IMLS](http://www.imls.uzh.ch/index.html), UZH  
+Katharina Hembach, PhD Student, [Robinson Lab](https://robinsonlabuzh.github.io/), [IMLS](http://www.imls.uzh.ch/index.html), UZH  
+
+Pierre-Luc Germain, Postdoctoral fellow, [Robinson Lab](https://robinsonlabuzh.github.io/), [IMLS](http://www.imls.uzh.ch/index.html), UZH and [Molecular and Behavioral Neuroscience](https://bohaceklab.ethz.ch/), [D-HEST](https://hest.ethz.ch/en), ETH Zurich 
+
 
 
 ## Schedule
