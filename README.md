@@ -32,10 +32,9 @@ Monday 11.00-11.45 (Y01-F-50)
 | 18.11.2019  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering  | scRNA exercise 1 |  |  |
 | 25.11.2019  | YYY | hands-on session #2: cytometry  | cytof null comparison | X | X |
 | 02.12.2019  | Mark | single-cell 2: cell type definition, differential state  | scRNA exercise 2 |  |  |
-| 09.12.2019  | Mark | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline | X | X |
+| 09.12.2019  | ZZZ | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline | X | X |
 | 16.12.2019  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding |  |  |    
 
-| 02.12.2019  | Hubert | classification  | MLInterfaces |  |  |
 
 ## Useful Links
 [Simply Statistics blog](https://simplystatistics.org/)  
