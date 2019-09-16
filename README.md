@@ -18,20 +18,21 @@ Monday 11.00-11.45 (Y01-F-50)
 | Date  | Lecturer | Topic | Exercise | JC1 | JC2 |
 | --- | --- | --- | --- | --- | --- |
 | 16.09.2019  | Mark + Hubert  | admin; mol. bio. basics | R markdown; git(hub) | | |
-| 23.09.2019  | Hubert | NGS intro; exploratory data analysis | EDA in R | | |
-| 30.09.2019  | Mark + Hubert | interactive technology/statistics session  | group exercise: technology pull request | | |
+| 23.09.2019  | Mark | interactive technology/statistics session  | group exercise: technology pull request | | |
+| 30.09.2019  | Hubert | NGS intro; exploratory data analysis | EDA in R | | |
 | 07.10.2019  | Hubert | mapping  | Rsubread | | |
-| 14.10.2019  | Hubert | RNA-seq quantification    | RSEM  | | |
-| 21.10.2019  | Mark | limma + friends | linear model simulation + design matrices |  |  |
-| 28.10.2019  | Charlotte | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
+| 14.10.2019  | Mark | limma + friends | linear model simulation + design matrices |  |  |
+| 21.10.2019  | Hubert | RNA-seq quantification    | RSEM  | | |
+| 28.10.2019  | YYY | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
 | 04.11.2019  | Mark | edgeR+friends 1 | basic edgeR/voom |  |  |
 | 11.11.2019  | Mark | edgeR+friends 2  | GLM/DEXSeq |  |  |
-| 18.11.2019  | Mark | single-cell dim. reduction + clustering; FDR  | conquer |  |  |
-| 25.11.2019  | Lukas | hands-on session #2: cytometry  | cytof null comparison | X | X |
-| 02.12.2019  | Hubert | classification  | MLInterfaces |  |  |
-| 09.12.2019  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding |  |  |    
-| 16.12.2019  | Mark | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline | X | X |
+| 18.11.2019  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering  | scRNA exercise 1 |  |  |
+| 25.11.2019  | YYY | hands-on session #2: cytometry  | cytof null comparison | X | X |
+| 02.12.2019  | Mark | single-cell 2: cell type definition, differential state  | scRNA exercise 2 |  |  |
+| 09.12.2019  | Mark | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline | X | X |
+| 16.12.2019  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding |  |  |    
 
+| 02.12.2019  | Hubert | classification  | MLInterfaces |  |  |
 
 ## Useful Links
 [Simply Statistics blog](https://simplystatistics.org/)  
