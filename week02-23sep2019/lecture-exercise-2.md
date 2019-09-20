@@ -18,11 +18,13 @@ s <- sample(length(techs))
 data.frame(row=s, techs)
 ```
 
+___
 ## Exercise 2 part a
 #### produce a 2-3 point summary of "how it works"
 #### links to a few (<5) good resources
 #### create a markdown file for it and make it your README.md in "group assignment" repo
 #### choose how to work in your group
+___
 
 # Part 3 - Brainstorm: Applications in genomics 
 
@@ -30,10 +32,13 @@ data.frame(row=s, techs)
 
 #### e.g., microarray -> gene expression -> normally distributed (log intensities)
 
-# Part 5 - Pick a *Technology* from Part 2 and *Application* from Part 3 (or from [*Seq](https://liorpachter.wordpress.com/seq/))
+# Part 5 - Pick a *Technology*/*Application* from [*Seq](https://liorpachter.wordpress.com/seq/) and ..
 
+___
 ## Exercise 2 part b (in same groups): 
 #### write ~2 sentences about what the method does
 #### make the link (technology -> application -> statistics)
 #### fork the 'material' repo, add a new file with your description (in markdown)
 #### list the github usernames of everyone in your group
+___
+
