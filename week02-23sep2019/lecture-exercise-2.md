@@ -19,11 +19,11 @@ data.frame(row=s, techs)
 ```
 
 ___
-## Exercise 2 part a
+## Exercise 2 part a (as a group)
 #### produce a 2-3 point summary of "how it works"
 #### links to a few (<5) good resources
-#### create a markdown file for it and make it your README.md in "group assignment" repo
-#### choose how to work in your group
+#### create a markdown file for your description and make it your README.md in the "group assignment" repo
+#### (choose how to share the work in your group)
 ___
 
 # Part 3 - Brainstorm: Applications in genomics 
@@ -38,7 +38,9 @@ ___
 ## Exercise 2 part b (in same groups): 
 #### write ~2 sentences about what the method does
 #### make the link (technology -> application -> statistics)
-#### fork the 'material' repo, add a new file with your description (in markdown)
-#### list the github usernames of everyone in your group
+#### create a markdown file with the description
+#### fork the [material](https://github.com/sta426hs2019/material) repo
+#### add your markdown file to the `week02-23sep2019` directory of the fork
+#### (list the github usernames of everyone in your group)
 ___
 
