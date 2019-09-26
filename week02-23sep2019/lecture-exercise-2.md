@@ -2,12 +2,20 @@
 # Part 1 - Brainstorm: Statistics
 
 ## Distributions
+![](distributions.jpg)
+
 ## Statistical Models
+![](statistical-models.jpg)
+
 ## Methods for Estimation
+![](estimation-methods.jpg)
+
 ## Methods for Hypothesis Testing
+![](statistical-tests.jpg)
 
 
 # Part 2 - Brainstorm: Technologies in Biology
+![](technologies.jpg)
 
 ```{r}
 techs <- c("microarray", "rna-seq", "dna-seq", 
@@ -27,8 +35,10 @@ ___
 ___
 
 # Part 3 - Brainstorm: Applications in genomics 
+![](applications.jpg)
 
 # Part 4 - Brainstorm: Linking Technologies to Applications to Statistics
+![](linking-tech-app-stats.jpg)
 
 #### e.g., microarray -> gene expression -> normally distributed (log intensities)
 
