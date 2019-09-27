@@ -4,3 +4,11 @@ ChIP-seq is used to analyze protein interactions with DNA. It combines ChIP (chr
 | Technology | Application | Statistics |
 | ---------- | :---------- | ---------- |
 | ChIP-seq   | Protein-DNA interaction analysis | Peak calling methods |
+
+Group members
+=============
+
+-   felix-hof
+-   joelmeili
+-   retodomax
+-   thomas-fischer42
