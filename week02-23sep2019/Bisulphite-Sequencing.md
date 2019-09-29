@@ -23,3 +23,6 @@ Hidden Markov models: HMM-DM and HMM-Fisher [2]
 
 [1]: [Lister et al, Human DNA methylomes at base resolution show widespread epigenomic differences, Nature, 2009.](https://www.nature.com/articles/nature08514)   
 [2]: [Yu et al, Comparing five statistical methods of differential methylation identification using bisulfite sequencing data, Stat Appl Genet Mol Biol., 2016.](https://www.ncbi.nlm.nih.gov/pubmed/26910753)
+
+### Group members:
+[cacerv](https://github.com/cacerv), [tseong](https://github.com/tseong), [bubibyte](https://github.com/bubibyte), [julianschmocker](https://github.com/julianschmocker)
