@@ -14,9 +14,9 @@ A comprehensive epigenome analysis can reveal mechanisms of epigenomic changes i
 
 ## Statistics
 
-Complete linkeage hierarchical clustering, Pearson correlation [1]
-Regression-based methods, e.g. methylKit, BiSeq 
-Smoothing-based methods, e.g. BSmooth 
+Complete linkeage hierarchical clustering, Pearson correlation [1]   
+Regression-based methods, e.g. methylKit, BiSeq   
+Smoothing-based methods, e.g. BSmooth   
 Hidden Markov models: HMM-DM and HMM-Fisher [2]
 
 ## References
