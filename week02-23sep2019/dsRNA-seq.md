@@ -20,3 +20,7 @@ Some of the statistical methods employed include
 
 https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/pars-dsrna-seq.html
 https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1001141#pgen.1001141.s017
+
+**Github Usernames**
+
+@flavio87, @Cauawest, @Alexander-Syn, @ahmadrezauf
