@@ -4,8 +4,8 @@ DNA with bound proteins are digested. Then, selected proteins and their bound DN
 
 *To-Do* make the link (technology -> application -> statistics)
 
-ChIP-Seq can be used to determine Binding sites of many different proteins, but most interesting are Transcription factors, since we could draw conclusions about gene activity, if we can understand TF-binding patterns. 
-The sensitivity of the method depends higly on sequencing depth used.
+ChIP-Seq can be used to determine binding sites of many different proteins, usually transcription factors, since we could draw conclusions about gene activity if we can understand TF-binding patterns. 
+The sensitivity of the method depends mainly on the sequencing depth used.
 
 github usernames:
 
