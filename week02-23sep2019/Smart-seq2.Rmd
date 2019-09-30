@@ -1,0 +1,37 @@
+---
+title: "Smart-seq2"
+author: "Anastasiia Efimova"
+date: "9/30/2019"
+output: html_document
+---
+
+## Smart-seq2
+
+__*Group 7*__
+
+*Anara2018* <br /> 
+*kthumf* <br /> 
+*AnaEfimova*
+
+### Technology
+
+Smart-seq2 allows to perform transcriptome analysis from single cells by the generation of full-length cDNA and sequencing libraries by using standard reagents. Compared to previously used Smart-seq, it provides improved sensitivity, accuracy and full-length coverage across transcripts.
+
+### Application
+
+It's widely used in cancer research, since it helps to decipher the complexity of tumor tissue. It's also used in basic research to characterise the heterogenous cell populations of comlex tissues (brain, testes). Also, the translational research utilizes it to discover difference between deseased and healthy tissue at single cell resolution. 
+
+### Statistics
+
+Once reads are obtained from scRNA-seq experiments, quality control (QC) is performed (for example, by using FastQC).
+
+The next step is normalization. Raw expression counts are normalized using scaling factor estimates by standardizing across cells, assuming that most genes are not differentially expressed. The most commonly used approaches include RPKM50, FPKM, and transcripts per kilobase million (TPM).
+
+After normalization, the next step is to estimate confounding factors. Recently, to address this issue, the scLVM58 method was developed and has been shown to be useful for removing the variation explained by latent variables. The management of known and unknown variables can also be addressed with complex statistical models using linear combinations that incorporate random noise.
+
+To identify cell types, methods to reduce dimentionality are used. Principal component analysis (PCA) is a widely used unsupervised linear dimensionality reduction method. Additional non-linear dimensionality reduction methods, such as t-distributed stochastic neighbor embedding (t-SNE), multidimensional scaling, locally linear embedding (LLE), and Isomap, can also be utilized. 
+
+To infer Gene Regulatory Networks, the following types of methods are used: machine learning-based, co-expression-based, model-based, and information theory-based approaches.
+
+
+
