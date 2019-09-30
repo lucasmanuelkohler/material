@@ -1,0 +1,51 @@
+---
+title: "Exercise 03"
+author: "Hubert Rehrauer"
+date: "30 09 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Mapping in practice
+
+Check the online available manuals for the mappers
+* bowtie2  
+* tophat2  
+* STAR  
+
+and answer the questions  
+* How do these mappers score alignments?  
+* What reporting options are available?  
+
+
+## Mapping with R
+
+Use the Rsubread package to map a read file found at http://fgcz-gstore.uzh.ch/public/Yeast_Reads/
+
+
+```{r, eval=FALSE}
+source("https://bioconductor.org/biocLite.R")
+biocLite("Rsubread")
+biocLite("BSgenome.Scerevisiae.UCSC.sacCer3")
+biocLite("TxDb.Scerevisiae.UCSC.sacCer3.sgdGene")
+```
+
+
+
+```{r}
+dir.create("~/tmp/Yeast_example")
+setwd("~/tmp/Yeast_example")
+library("BSgenome.Scerevisiae.UCSC.sacCer3")
+library("Rsubread")
+```
+
+Use the commands *export* to export the genome as a fasta file. Use the commands *buildindex* and *align* to map the reads. Consult the help pages of the respective functions. Build the index so that at most 2GB of RAM is used. Run the alignment with 4 threads. If you computer has less resources, adapt accordingly.
+
+What is the mapping rate of the reads? How does the mapping rate change if you trim 5 bases of both ends?
+
+
+
