@@ -9,3 +9,4 @@ github usernames:
 
 lwidmer94
 benlug
+Jette84
