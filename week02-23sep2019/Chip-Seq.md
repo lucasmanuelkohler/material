@@ -1,13 +1,11 @@
-**ChIP-Seq**
+##ChIP-Seq
 
 DNA with bound proteins are digested. Then, selected proteins and their bound DNA can be isolated using Chromatin Immunopercipitation (ChIP). The isolated DNA can then be sequenced using high troughput sequencing methods and from there we can draw conclusions on the binding sites of the proteins in question.
-
-*To-Do* make the link (technology -> application -> statistics)
 
 ChIP-Seq can be used to determine binding sites of many different proteins, usually transcription factors, since we could draw conclusions about gene activity if we can understand TF-binding patterns. 
 The sensitivity of the method depends mainly on the sequencing depth used.
 
-## Analysis
+ **Analysis**
 
 First of all the dataset is compared to a reference dataset. It is done to find the locations that match the reference-dataset perfectly (or nearly perfectly). Usually, only two mismatches in the first 25-bp of the read are allowed. One does not compare all the read, partly because mismatches become more frequent at the end of reads. 
 
