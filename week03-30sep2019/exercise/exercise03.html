@@ -270,7 +270,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -382,56 +381,17 @@ summary {
 <div id="mapping-with-r" class="section level2">
 <h2>Mapping with R</h2>
 <p>Use the Rsubread package to map a read file found at <a href="http://fgcz-gstore.uzh.ch/public/Yeast_Reads/" class="uri">http://fgcz-gstore.uzh.ch/public/Yeast_Reads/</a></p>
-<pre class="r"><code>source(&quot;https://bioconductor.org/biocLite.R&quot;)
-biocLite(&quot;Rsubread&quot;)
-biocLite(&quot;BSgenome.Scerevisiae.UCSC.sacCer3&quot;)
-biocLite(&quot;TxDb.Scerevisiae.UCSC.sacCer3.sgdGene&quot;)</code></pre>
+<pre class="r"><code># install BioC packages via BiocManager (not run)
+install.packages(&quot;BiocManager&quot;)
+BiocManager::install(&quot;Rsubread&quot;)
+BiocManager::install(&quot;BSgenome.Scerevisiae.UCSC.sacCer3&quot;)
+BiocManager::install(&quot;TxDb.Scerevisiae.UCSC.sacCer3.sgdGene&quot;)</code></pre>
 <pre class="r"><code>dir.create(&quot;~/tmp/Yeast_example&quot;)</code></pre>
-<pre><code>## Warning in dir.create(&quot;~/tmp/Yeast_example&quot;): '/Users/hubert/tmp/
-## Yeast_example' existiert bereits</code></pre>
+<pre><code>## Warning in dir.create(&quot;~/tmp/Yeast_example&quot;): '/Users/mark/tmp/
+## Yeast_example' already exists</code></pre>
 <pre class="r"><code>setwd(&quot;~/tmp/Yeast_example&quot;)
-library(&quot;BSgenome.Scerevisiae.UCSC.sacCer3&quot;)</code></pre>
-<pre><code>## Loading required package: BSgenome</code></pre>
-<pre><code>## Loading required package: BiocGenerics</code></pre>
-<pre><code>## Loading required package: parallel</code></pre>
-<pre><code>## 
-## Attaching package: 'BiocGenerics'</code></pre>
-<pre><code>## The following objects are masked from 'package:parallel':
-## 
-##     clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
-##     clusterExport, clusterMap, parApply, parCapply, parLapply,
-##     parLapplyLB, parRapply, parSapply, parSapplyLB</code></pre>
-<pre><code>## The following objects are masked from 'package:stats':
-## 
-##     IQR, mad, sd, var, xtabs</code></pre>
-<pre><code>## The following objects are masked from 'package:base':
-## 
-##     anyDuplicated, append, as.data.frame, basename, cbind,
-##     colnames, dirname, do.call, duplicated, eval, evalq, Filter,
-##     Find, get, grep, grepl, intersect, is.unsorted, lapply, Map,
-##     mapply, match, mget, order, paste, pmax, pmax.int, pmin,
-##     pmin.int, Position, rank, rbind, Reduce, rownames, sapply,
-##     setdiff, sort, table, tapply, union, unique, unsplit, which,
-##     which.max, which.min</code></pre>
-<pre><code>## Loading required package: S4Vectors</code></pre>
-<pre><code>## Loading required package: stats4</code></pre>
-<pre><code>## 
-## Attaching package: 'S4Vectors'</code></pre>
-<pre><code>## The following object is masked from 'package:base':
-## 
-##     expand.grid</code></pre>
-<pre><code>## Loading required package: IRanges</code></pre>
-<pre><code>## Loading required package: GenomeInfoDb</code></pre>
-<pre><code>## Loading required package: GenomicRanges</code></pre>
-<pre><code>## Loading required package: Biostrings</code></pre>
-<pre><code>## Loading required package: XVector</code></pre>
-<pre><code>## 
-## Attaching package: 'Biostrings'</code></pre>
-<pre><code>## The following object is masked from 'package:base':
-## 
-##     strsplit</code></pre>
-<pre><code>## Loading required package: rtracklayer</code></pre>
-<pre class="r"><code>library(&quot;Rsubread&quot;)</code></pre>
+library(&quot;BSgenome.Scerevisiae.UCSC.sacCer3&quot;)
+library(&quot;Rsubread&quot;)</code></pre>
 <p>Use the commands <em>export</em> to export the genome as a fasta file. Use the commands <em>buildindex</em> and <em>align</em> to map the reads. Consult the help pages of the respective functions. Build the index so that at most 2GB of RAM is used. Run the alignment with 4 threads. If you computer has less resources, adapt accordingly.</p>
 <p>What is the mapping rate of the reads? How does the mapping rate change if you trim 5 bases of both ends?</p>
 </div>
