@@ -42,11 +42,12 @@ BiocManager::install("TxDb.Scerevisiae.UCSC.sacCer3.sgdGene")
 ```{r, message=FALSE}
 dir.create("~/tmp/Yeast_example")
 setwd("~/tmp/Yeast_example")
+library("BSgenome")
 library("BSgenome.Scerevisiae.UCSC.sacCer3")
 library("Rsubread")
 ```
 
-Use the commands *export* to export the genome as a fasta file. Use the commands *buildindex* and *align* to map the reads. Consult the help pages of the respective functions. Build the index so that at most 2GB of RAM is used. Run the alignment with 4 threads. If you computer has less resources, adapt accordingly.
+Use the commands *export* to export method in the *BSgenome* package to write the genome as a fasta file on the local disk. Use the commands *buildindex* and *align* of the *Rsubread* package to map the reads. Consult the help pages of the respective functions. Build the index so that at most 2GB of RAM is used. Run the alignment with 4 threads. If you computer has less resources, adapt accordingly.
 
 What is the mapping rate of the reads? How does the mapping rate change if you trim 5 bases of both ends?
 

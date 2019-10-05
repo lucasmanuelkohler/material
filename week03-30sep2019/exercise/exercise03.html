@@ -270,6 +270,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -387,12 +388,13 @@ BiocManager::install(&quot;Rsubread&quot;)
 BiocManager::install(&quot;BSgenome.Scerevisiae.UCSC.sacCer3&quot;)
 BiocManager::install(&quot;TxDb.Scerevisiae.UCSC.sacCer3.sgdGene&quot;)</code></pre>
 <pre class="r"><code>dir.create(&quot;~/tmp/Yeast_example&quot;)</code></pre>
-<pre><code>## Warning in dir.create(&quot;~/tmp/Yeast_example&quot;): '/Users/mark/tmp/
-## Yeast_example' already exists</code></pre>
+<pre><code>## Warning in dir.create(&quot;~/tmp/Yeast_example&quot;): '/Users/hubert/tmp/
+## Yeast_example' existiert bereits</code></pre>
 <pre class="r"><code>setwd(&quot;~/tmp/Yeast_example&quot;)
+library(&quot;BSgenome&quot;)
 library(&quot;BSgenome.Scerevisiae.UCSC.sacCer3&quot;)
 library(&quot;Rsubread&quot;)</code></pre>
-<p>Use the commands <em>export</em> to export the genome as a fasta file. Use the commands <em>buildindex</em> and <em>align</em> to map the reads. Consult the help pages of the respective functions. Build the index so that at most 2GB of RAM is used. Run the alignment with 4 threads. If you computer has less resources, adapt accordingly.</p>
+<p>Use the commands <em>export</em> to export method in the <em>BSgenome</em> package to write the genome as a fasta file on the local disk. Use the commands <em>buildindex</em> and <em>align</em> of the <em>Rsubread</em> package to map the reads. Consult the help pages of the respective functions. Build the index so that at most 2GB of RAM is used. Run the alignment with 4 threads. If you computer has less resources, adapt accordingly.</p>
 <p>What is the mapping rate of the reads? How does the mapping rate change if you trim 5 bases of both ends?</p>
 </div>
 
