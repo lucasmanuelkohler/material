@@ -29,7 +29,7 @@ Helena Crowell, PhD Student, [Robinson Lab](https://robinsonlabuzh.github.io/), 
 | 23.09.2019  | Mark | interactive technology/statistics session  | group exercise: technology pull request | | |
 | 30.09.2019  | Hubert | NGS intro; exploratory data analysis | EDA in R | | |
 | 07.10.2019  | Hubert | mapping  | Rsubread | | |
-| 14.10.2019  | Mark | limma + friends | linear model simulation + design matrices |  |  |
+| 14.10.2019  | Mark | limma + friends | linear model simulation + design matrices | Redefining CpG islands using hidden Markov models] (https://academic.oup.com/biostatistics/article/11/3/499/256898) (AM,LW,MM) |  |
 | 21.10.2019  | Hubert | RNA-seq quantification    | RSEM  | | |
 | 28.10.2019  | Kathi | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
 | 04.11.2019  | Mark | edgeR+friends 1 | basic edgeR/voom |  |  |
