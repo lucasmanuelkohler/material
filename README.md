@@ -32,8 +32,8 @@ Pierre-Luc Germain, Postdoctoral Fellow, [Robinson Lab](https://robinsonlabuzh.g
 | 28.10.2019  | Kathi | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
 | 04.11.2019  | Mark | edgeR+friends 1 | basic edgeR/voom |  |  |
 | 11.11.2019  | Mark | edgeR+friends 2  | GLM/DEXSeq |  |  |
-| 18.11.2019  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering  | scRNA exercise 1 |  |  |
-| 25.11.2019  | YYY | hands-on session #2: cytometry  | cytof null comparison | X | [Normalization of RNA-seq data using factor analysis of control genes or samples](https://www.nature.com/articles/nbt.2931) (J.M, F.H) |
+| 18.11.2019  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering  | scRNA exercise 1 |  | [Normalization of RNA-seq data using factor analysis of control genes or samples](https://www.nature.com/articles/nbt.2931) (J.M, F.H)  |
+| 25.11.2019  | YYY | hands-on session #2: cytometry  | cytof null comparison | X | X |
 | 02.12.2019  | Mark | single-cell 2: cell type definition, differential state  | scRNA exercise 2 |  |  |
 | 09.12.2019  | Pierre-Luc | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline | X | X |
 | 16.12.2019  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding |  |  |    
