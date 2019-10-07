@@ -51,6 +51,7 @@ ___
 #### create a markdown file (name it with the selected technology) with the description
 #### fork the [material](https://github.com/sta426hs2019/material) repo
 #### add your markdown file to the `week02-23sep2019` directory of the fork
+#### send a pull request to the master repo of `material`
 #### (list the github usernames of everyone in your group)
 ___
 
