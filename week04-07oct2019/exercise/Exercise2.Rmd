@@ -1,0 +1,46 @@
+---
+title: "Exercise 4"
+author: "Hubert Rehrauer"
+date: "07 10 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Exploratory Data Analysis
+
+Do an exploratory data analysis of a matrix of expression values. Load the data and display:
+
+* distributions: *boxplot*, *density*, *limma::plotDensities*
+* normalization: *limma::normalizeQuantiles*
+* clustering: *hclust*
+* heatmap: use the package *pheatmap*
+* correlation matrix: *cor* and *image*
+* reduced dimensionality representation: *cmdscale* and *prcomp*
+
+
+## Data Import
+```{r }
+anno = read.table("SampleAnnotation.txt", as.is=TRUE, sep="\t", quote="",
+                  row.names=1, header=TRUE)
+x = read.table("expressiondata.txt", as.is=TRUE, sep="\t", quote="", row.names=1, header=TRUE, check.names = FALSE)
+x = as.matrix(x)
+```
+
+## Define samples and colors and phenotype
+```{r}
+samples = rownames(anno)
+colors = rainbow(nrow(anno))
+isNorm = anno$TissueType == "norm"
+isSick = anno$TissueType == "sick"
+isAcute = anno$TissueType == "acute"
+```
+
+## Notes
+
+* When clustering the samples, please make sure that you cluster the columns, i.e. the distance matrix should be computed for the columns.
+* Since the expression values span a large dynamic range, do a log-transform of the values before plotting
+* For the heatmap use only the 500 genes with the highest variance across the samples
+
