@@ -36,7 +36,7 @@ Helena Crowell, PhD Student, [Robinson Lab](https://robinsonlabuzh.github.io/), 
 | 11.11.2019  | Mark | edgeR+friends 2  | GLM/DEXSeq |  |  |
 | 18.11.2019  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering  | scRNA exercise 1 | [Integrating single-cell transcriptomic data across different conditions, technologies, and species](https://www.nature.com/articles/nbt.4096) (AA, HG) | [Normalization of RNA-seq data using factor analysis of control genes or samples](https://www.nature.com/articles/nbt.2931) (J.M, F.H) |
 | 25.11.2019  | Helena | hands-on session #2: cytometry  | cytof null comparison | X | X |
-| 02.12.2019  | Mark | single-cell 2: cell type definition, differential state  | scRNA exercise 2 |  |  |
+| 02.12.2019  | Mark | single-cell 2: cell type definition, differential state  | scRNA exercise 2 | [Capturing Heterogeneity in Gene Expression Studies by Surrogate Variable Analysis](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0030161) (C.B, T.F) |  |
 | 09.12.2019  | Pierre-Luc | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline | X | X |
 | 16.12.2019  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding |  |  |    
 
