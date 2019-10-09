@@ -38,7 +38,7 @@ Helena Crowell, PhD Student, [Robinson Lab](https://robinsonlabuzh.github.io/), 
 | 25.11.2019  | Helena | hands-on session #2: cytometry  | cytof null comparison | X | X |
 | 02.12.2019  | Mark | single-cell 2: cell type definition, differential state  | scRNA exercise 2 |  |  |
 | 09.12.2019  | Pierre-Luc | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline | X | X |
-| 16.12.2019  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding |  |  |    
+| 16.12.2019  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding | [Shrinkage estimation of dispersion in Negative Binomial models for RNA-seq experiments with small sample size](https://academic.oup.com/bioinformatics/article/29/10/1275/259212) (AS, CP, IP) |  |    
 
 
 ## Useful Links
