@@ -29,16 +29,16 @@ Helena Crowell, PhD Student, [Robinson Lab](https://robinsonlabuzh.github.io/), 
 | 23.09.2019  | Mark | interactive technology/statistics session  | group exercise: technology pull request | | |
 | 30.09.2019  | Hubert | NGS intro; exploratory data analysis | EDA in R | | |
 | 07.10.2019  | Hubert | mapping  | Rsubread | | |
-| 14.10.2019  | Mark | limma + friends | linear model simulation + design matrices |  |  |
+| 14.10.2019  | Mark | limma + friends | linear model simulation + design matrices | [Redefining CpG islands using hidden Markov models](https://academic.oup.com/biostatistics/article/11/3/499/256898) (AM,LW,MM) |  |
 | 21.10.2019  | Hubert | RNA-seq quantification    | RSEM  | | |
-| 28.10.2019  | Kathi | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
-| 04.11.2019  | Mark | edgeR+friends 1 | basic edgeR/voom |  |  |
-| 11.11.2019  | Mark | edgeR+friends 2  | GLM/DEXSeq |  |  |
-| 18.11.2019  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering  | scRNA exercise 1 |  |  |
+| 28.10.2019  | Mark | edgeR+friends 1 | basic edgeR/voom | |  |
+| 04.11.2019  | Mark | edgeR+friends 2  | GLM/DEXSeq | [Adjusting batch effects in microarray expression data using empirical Bayes methods](https://academic.oup.com/biostatistics/article/8/1/118/252073) (KT, AE, AA) | [Batch effects in single-cell RNA-sequencing data are corrected by matching mutual nearest neighbors](https://www.nature.com/articles/nbt.4091?draft=journal) (TS, CC, SS) |
+| 11.11.2019  | Kathi | hands-on session #1: RNA-seq  | FASTQC/Salmon/etc. | X | X |
+| 18.11.2019  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering  | scRNA exercise 1 | [Integrating single-cell transcriptomic data across different conditions, technologies, and species](https://www.nature.com/articles/nbt.4096) (AA, HG) | [Normalization of RNA-seq data using factor analysis of control genes or samples](https://www.nature.com/articles/nbt.2931) (J.M, F.H) |
 | 25.11.2019  | Helena | hands-on session #2: cytometry  | cytof null comparison | X | X |
-| 02.12.2019  | Mark | single-cell 2: cell type definition, differential state  | scRNA exercise 2 |  |  |
+| 02.12.2019  | Mark | single-cell 2: cell type definition, differential state  | scRNA exercise 2 | [Capturing Heterogeneity in Gene Expression Studies by Surrogate Variable Analysis](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0030161) (C.B, T.F) | [Molecular Cross-Validation for Single-Cell RNA-seq](https://www.biorxiv.org/content/10.1101/786269v1) (AY, SM, GH) |
 | 09.12.2019  | Pierre-Luc | hands-on session #3: single-cell RNA-seq  | full scRNA-seq pipeline | X | X |
-| 16.12.2019  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding |  |  |    
+| 16.12.2019  | Mark | loose ends: HMM, EM, robustness   | segmentation, peak finding | [Shrinkage estimation of dispersion in Negative Binomial models for RNA-seq experiments with small sample size](https://academic.oup.com/bioinformatics/article/29/10/1275/259212) (AS, CP, IP) | [Empirical Bayes Analysis of a Microarray Experiment](https://www.tandfonline.com/doi/abs/10.1198/016214501753382129) (JS, CW, DS) |    
 
 
 ## Useful Links
